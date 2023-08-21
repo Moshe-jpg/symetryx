@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-transparent: rgba(255,255,255,0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* ::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button, a, ul, ol, li {
+  all: unset;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  /* height: 20vh; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar img {
+  width: 75px;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* homepage video */
+
+.homepage-container {
+  position: relative;
+  height: auto;
+  min-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* 50% opaque black. Adjust the 0.5 value as needed. */
+  z-index: 1;  /* Make sure this is above the video but below the content. */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.homepage-container h1 {
+  color: var(--white);
+  letter-spacing: 1.2px;
+  font-size: 5rem;
+  z-index: 100;
+  position: relative;
+}
+
+/* logo component */
+
+.logo-container {
+  width: 100%;
+  position: relative;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 100;
+  background: var(--light-transparent);
+}
+
+
+.logo-container img {
+  width: 15.5rem;
+  margin: 25px;
+  padding: 5px;
 }
