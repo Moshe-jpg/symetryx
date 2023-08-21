@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 :root {
   --white: #ffffff;
   --black: #000000;
   --light-transparent: rgba(255,255,255,0.75);
+  --dark-transparent: rgba(255,255,255,0.3);
 }
 
 * {
@@ -10,6 +13,9 @@
   box-sizing: border-box;
   letter-spacing: 1px;
   overflow-x: hidden;
+  line-height: 1.5;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 1px;
 }
 
 * ::-webkit-scrollbar {
@@ -18,6 +24,10 @@
 
 button, a, ul, ol, li {
   all: unset;
+}
+
+button, a {
+  cursor: pointer;
 }
 
 /* navbar */
@@ -35,9 +45,19 @@ button, a, ul, ol, li {
   background: rgba(0, 0, 0, 0);
 }
 
+@keyframes rotateLogo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .navbar img {
   width: 75px;
   margin-top: 50px;
+  animation: rotateLogo 15s linear infinite;
+}
+
+.navbar img:hover {
+  animation-play-state: paused;
 }
 
 /* homepage video */
@@ -51,6 +71,7 @@ button, a, ul, ol, li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #002ca580); 
 }
 
 .homepage-container::before {
@@ -60,8 +81,8 @@ button, a, ul, ol, li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);  /* 50% opaque black. Adjust the 0.5 value as needed. */
-  z-index: 1;  /* Make sure this is above the video but below the content. */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
 }
 
 .background-video {
@@ -76,10 +97,20 @@ button, a, ul, ol, li {
 
 .homepage-container h1 {
   color: var(--white);
-  letter-spacing: 1.2px;
-  font-size: 5rem;
+  letter-spacing: 2.5px;
+  font-size: 2.75rem;
   z-index: 100;
   position: relative;
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.homepage-container span {
+  color: var(--white);
+  display: block;
+  font-size: 1.5rem;
+  filter: brightness(0.6);
+  margin-top: 15px;
 }
 
 /* logo component */
@@ -97,9 +128,279 @@ button, a, ul, ol, li {
   background: var(--light-transparent);
 }
 
+.separation-line {
+  height: 1px;
+  width: 90%;
+  background: var(--black);
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.logo-container .card:hover .separation-line {
+  background: transparent;
+}
+
+.logo-container .card {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 25px;
+}
+
+.logo-container .card:hover {
+  transform: scaleX(1.25);
+  transition-delay: 0;
+}
+
+.logo-container .card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.logo-container .card:hover .circle {
+background: var(--light-transparent);
+}
+
+.logo-container .card .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.card:hover .circle::before {
+  clip-path: circle(400px at center);
+}
+
+.card .circle .logo {
+  position: relative;
+  width: 20rem;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+
+.logo-container .card .content {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  bottom: 20%;
+  /* padding: 20px 20px 20px 40px; */
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: scaleX(0.6369);
+  text-align: center;
+}
+
+.card:hover .content {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+  color: var(--black);
+}
+
+.content h2 {
+  text-transform: uppercase;
+  font-size: 1.75em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: .9em;
+}
+
+.content a {
+  position: relative;
+  color: var(--white);
+  background: #002ca580;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
 
 .logo-container img {
   width: 15.5rem;
   margin: 25px;
   padding: 5px;
+}
+
+
+/* footer */
+
+
+/* contact section */
+
+.contact-layout-container {
+  width: 100%;
+  height: 90vh;
+  max-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  overflow: initial;
+}
+
+.contact-layout-container .contact-container,
+.email-form-container {
+  width: 40vw;
+  max-width: 650px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.contact-layout-container .contact-container {
+  background: linear-gradient(45deg, black 10px, var(--light-transparent));
+  border-radius: 5px;
+}
+
+.contact-form-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 22px;
+  background: var(--orange);
+  border-bottom: 1px solid var(--white);
+}
+
+/* email component */
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form .inputBox-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+form .inputBox-container .spacer {
+  height: 2px;
+  background: var(--orange);
+}
+
+form .inputBox {
+  width: 100%;
+  height: 31%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .inputBox input {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--black);
+}
+
+form .inputBox input::placeholder {
+  font-size: 18px;
+  color: var(--orange);
+  background: var(--black);
+}
+
+form .inputBox .inputBox-message-input {
+  font-size: 18px;
+}
+
+form .inputBoxBtn-Container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .inputBoxBtn {
+  font-size: 26px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  transition: 0.5s ease-in-out;
+}
+
+form .inputBoxBtn:hover {
+  transform: scale(1.1);
+  color: var(--white);
+  background: var(--orange);
+  border: 1px solid var(--white);
+}
+
+
+@media screen and (max-width:768px) {
+
+  .homepage-container h1 {
+    margin: 30px 0 25px;
+  }
+
+  .homepage-container h1 {
+    font-size: 3rem;
+  }
+
+  .logo-container .card:hover {
+    width: 90%;
+    height: 500px;
+    transition-delay: 0;
+  }
+
+  .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .content a {
+    font-size: 1em;
+  }
 }
