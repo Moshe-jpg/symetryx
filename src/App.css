@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 :root {
   --white: #ffffff;
   --black: #000000;
-  --light-transparent: rgba(255,255,255,0.75);
-  --dark-transparent: rgba(255,255,255,0.3);
+  --light-transparent: rgba(255, 255, 255, 0.75);
+  --dark-transparent: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -14,7 +14,7 @@
   letter-spacing: 1px;
   overflow-x: hidden;
   line-height: 1.5;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 1px;
 }
 
@@ -22,11 +22,16 @@
   display: none;
 }
 
-button, a, ul, ol, li {
+button,
+a,
+ul,
+ol,
+li {
   all: unset;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
@@ -46,8 +51,12 @@ button, a {
 }
 
 @keyframes rotateLogo {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .navbar img {
@@ -71,7 +80,7 @@ button, a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #002ca580); 
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #002ca580);
 }
 
 .homepage-container::before {
@@ -81,7 +90,7 @@ button, a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -113,6 +122,10 @@ button, a {
   margin-top: 15px;
 }
 
+.homepage-container span:first-child {
+  margin-top: 0;
+}
+
 /* logo component */
 
 .logo-container {
@@ -142,8 +155,8 @@ button, a {
 }
 
 .logo-container .card {
-  width: 350px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
   position: relative;
   display: flex;
   align-items: center;
@@ -163,7 +176,7 @@ button, a {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -173,7 +186,7 @@ button, a {
 }
 
 .logo-container .card:hover .circle {
-background: var(--light-transparent);
+  background: var(--light-transparent);
 }
 
 .logo-container .card .circle::before {
@@ -193,7 +206,7 @@ background: var(--light-transparent);
 
 .card .circle .logo {
   position: relative;
-  width: 20rem;
+  width: 15.5rem;
   transition: 0.5s;
   transition-delay: 0.5s;
 }
@@ -234,7 +247,7 @@ background: var(--light-transparent);
 }
 
 .content p {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 .content a {
@@ -242,7 +255,7 @@ background: var(--light-transparent);
   color: var(--white);
   background: #002ca580;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 15px;
   margin-top: 10px;
   display: inline-block;
   text-decoration: none;
@@ -250,62 +263,63 @@ background: var(--light-transparent);
   margin-top: 20px;
 }
 
-
 .logo-container img {
   width: 15.5rem;
   margin: 25px;
   padding: 5px;
 }
 
-
 /* footer */
 
-
-/* contact section */
-
-.contact-layout-container {
+.footer {
   width: 100%;
-  height: 90vh;
-  max-height: 450px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 100;
+}
+
+.footer .contact-layout-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  overflow: initial;
-}
-
-.contact-layout-container .contact-container,
-.email-form-container {
-  width: 40vw;
-  max-width: 650px;
-  height: 100%;
-  overflow: hidden;
-  z-index: 100;
-}
-
-.contact-layout-container .contact-container {
-  background: linear-gradient(45deg, black 10px, var(--light-transparent));
-  border-radius: 5px;
-}
-
-.contact-form-header {
   width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 22px;
-  background: var(--orange);
-  border-bottom: 1px solid var(--white);
+  min-height: 500px;
+  color: var(--white);
 }
 
 /* email component */
 
-form {
-  width: 100%;
+.contact-container {
+  width: 500px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.contact-container address, .contact-container a  {
+  width: 40%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.contact-container .address .location {
+  color: var(--white);
+  filter: brightness(1);
+  font-size: 1rem;
+}
+
+.contact-container a {
+  margin: 10px;
 }
 
 form .inputBox-container {
@@ -319,7 +333,7 @@ form .inputBox-container {
 
 form .inputBox-container .spacer {
   height: 2px;
-  background: var(--orange);
+  background: var(--black);
 }
 
 form .inputBox {
@@ -338,13 +352,10 @@ form .inputBox input {
   font-size: 18px;
   overflow: hidden;
   color: var(--white);
-  background: var(--black);
 }
 
 form .inputBox input::placeholder {
   font-size: 18px;
-  color: var(--orange);
-  background: var(--black);
 }
 
 form .inputBox .inputBox-message-input {
@@ -363,21 +374,16 @@ form .inputBoxBtn {
   font-size: 26px;
   padding: 10px 15px;
   border-radius: 15px;
-  border: 1px solid var(--orange);
-  color: var(--orange);
   transition: 0.5s ease-in-out;
 }
 
 form .inputBoxBtn:hover {
   transform: scale(1.1);
   color: var(--white);
-  background: var(--orange);
   border: 1px solid var(--white);
 }
 
-
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .homepage-container h1 {
     margin: 30px 0 25px;
   }
