@@ -39,14 +39,11 @@ a {
 
 .navbar {
   width: 100%;
-  /* height: 20vh; */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -61,7 +58,7 @@ a {
 
 .navbar img {
   width: 75px;
-  margin-top: 50px;
+  margin: 25px 0 0;
   animation: rotateLogo 15s linear infinite;
 }
 
@@ -94,16 +91,6 @@ a {
   z-index: 1;
 }
 
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .homepage-container h1 {
   color: var(--white);
   letter-spacing: 2.5px;
@@ -131,49 +118,33 @@ a {
 .logo-container {
   width: 100%;
   position: relative;
-  margin-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
   z-index: 100;
-  background: var(--light-transparent);
-}
-
-.separation-line {
-  height: 1px;
-  width: 90%;
-  background: var(--black);
-  position: absolute;
-  bottom: 0;
-  transition: 0.5s ease-in-out;
-}
-
-.logo-container .card:hover .separation-line {
-  background: transparent;
+  background: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-content: center;
+  gap: 10px;
 }
 
 .logo-container .card {
-  width: 300px;
-  height: 450px;
+  height: 300px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  margin: 25px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  margin: 10px;
 }
 
 .logo-container .card:hover {
-  transform: scaleX(1.25);
-  transition-delay: 0;
+  border: 1px solid var(--black);
 }
 
 .logo-container .card .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative; /* Using relative positioning now */
+  z-index: 2; /* Keeping it on top initially */
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -182,89 +153,75 @@ a {
   align-items: center;
   justify-content: center;
   background: transparent;
-  transition: 0.5s ease-in-out;
+  transition: z-index 0s 0.5s; /* Delay z-index change to after the logo disappears */
 }
 
-.logo-container .card:hover .circle {
-  background: var(--light-transparent);
-}
-
-.logo-container .card .circle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  clip-path: circle(120px at center);
-  transition: 0.5s;
-}
-
-.card:hover .circle::before {
-  clip-path: circle(400px at center);
-}
-
-.card .circle .logo {
-  position: relative;
+.logo-container .card .circle .logo {
   width: 15.5rem;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .card:hover .circle .logo {
   transform: scale(0);
-  transition-delay: 0s;
+  opacity: 0;
 }
 
+
+
 .logo-container .card .content {
-  visibility: hidden;
-  position: relative;
+  position: absolute; /* Position content on top of logo */
+  top: 0;
+  left: 0;
   width: 100%;
-  bottom: 20%;
-  /* padding: 20px 20px 20px 40px; */
-  opacity: 0;
-  transition: 0.5s;
+  height: 100%;
+  opacity: 0; /* Hidden initially using opacity */
+  visibility: hidden; /* Using visibility to make sure it doesn't capture mouse events when not shown */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Transitioning opacity and visibility */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transform: scaleX(0.6369);
   text-align: center;
 }
 
 .card:hover .content {
-  bottom: 0;
+  z-index: 100;
   opacity: 1;
   visibility: visible;
-  transition-delay: 0.1s;
-  color: var(--black);
 }
 
 .content h2 {
   text-transform: uppercase;
-  font-size: 1.75em;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
+.content h2::-webkit-scrollbar {
+  display: none;
+}
+
+
 .content p {
-  font-size: 0.9em;
+  font-size: 12px;
+  margin: 5px 0;
+  overflow-y: auto;
+  padding: 0 10px;
 }
 
 .content a {
-  position: relative;
   color: var(--white);
   background: #002ca580;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 15px;
-  margin-top: 10px;
+  margin: 10px 0;
   display: inline-block;
   text-decoration: none;
+  font-size: 12px;
   font-weight: 800;
-  margin-top: 20px;
 }
 
 .logo-container img {
-  width: 15.5rem;
   margin: 25px;
   padding: 5px;
 }
@@ -277,49 +234,71 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
   z-index: 100;
+  background: var(--black);
+  color: var(--white);
 }
 
 .footer .contact-layout-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  min-height: 500px;
+  /* min-height: 500px; */
   color: var(--white);
 }
 
 /* email component */
 
 .contact-container {
-  width: 500px;
-  height: 100%;
+  width: 30%;
+  height: 400%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: rgb(255, 255, 255, 0.2);
+  flex-direction: row;
+  flex-wrap: wrap;
   backdrop-filter: blur(5px);
   text-align: left;
   padding: 10px 20px;
   border-radius: 15px;
+  margin: 25px;
 }
 
-.contact-container address, .contact-container a  {
-  width: 40%;
+.contact-container address {
+  /* width: 150px; */
+  height: auto;
   text-align: left;
   font-size: 1rem;
+  margin: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact-container .address .location {
   color: var(--white);
   filter: brightness(1);
   font-size: 1rem;
+  margin: 10px 0;
 }
 
 .contact-container a {
-  margin: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+form {
+  /* height: 400px; */
+  width: 600px;
+  border: 1px solid var(--light-transparent);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 25px;
 }
 
 form .inputBox-container {
@@ -332,13 +311,14 @@ form .inputBox-container {
 }
 
 form .inputBox-container .spacer {
-  height: 2px;
-  background: var(--black);
+  height: 1px;
+  width: 95%;
+  background: var(--white);
 }
 
 form .inputBox {
   width: 100%;
-  height: 31%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,37 +344,79 @@ form .inputBox .inputBox-message-input {
 
 form .inputBoxBtn-Container {
   width: 100%;
-  height: 20%;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 form .inputBoxBtn {
-  font-size: 26px;
-  padding: 10px 15px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 22px;
+  padding: 5px 10px;
   border-radius: 15px;
   transition: 0.5s ease-in-out;
+  border: 1px solid var(--white);
 }
 
 form .inputBoxBtn:hover {
-  transform: scale(1.1);
-  color: var(--white);
-  border: 1px solid var(--white);
+  background: var(--white);
+  color: var(--black);
+}
+
+.footer .last-p {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* website container */
+
+ .website-container {
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+ .website-container p {
+  font-size: 1.25rem;
+}
+
+ .website-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  cursor: pointer;
+}
+
+ .website-container a img {
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .homepage-container h1 {
-    margin: 30px 0 25px;
+    margin: 0 0 10px;
   }
 
   .homepage-container h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .logo-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
   }
 
   .logo-container .card:hover {
-    width: 90%;
-    height: 500px;
+    /* width: 90%; */
+    min-height: 350px;
+    max-height: 500px;
     transition-delay: 0;
   }
 
@@ -408,5 +430,27 @@ form .inputBoxBtn:hover {
 
   .content a {
     font-size: 1em;
+  }
+
+  /* footer */
+  .contact-container {
+    width: 100%;
+  }
+
+  .contact-container .address {
+    text-align: center;
+  }
+
+  .contact-container .address .location {
+    margin: 10px auto;
+  }
+
+}
+
+/* For smaller screens like mobile */
+@media screen and (max-width: 480px) {
+  .logo-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
   }
 }

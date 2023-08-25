@@ -47,6 +47,15 @@ const EmailForm = () => {
         <div className="spacer"></div>
         <div className="inputBox">
           <input
+            type="company"
+            name="user_user_company"
+            required="required"
+            placeholder="* Company"
+          />
+        </div>
+        <div className="spacer"></div>
+        <div className="inputBox">
+          <input
             type="email"
             name="user_email"
             required="required"

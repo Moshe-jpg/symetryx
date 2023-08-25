@@ -309,12 +309,11 @@ const LogoList = () => {
           </div>
           <div className="content">
             <h2>{logo.title}</h2>
-            <p>{logo.desc}</p>
+            <p className="para">{logo.desc}</p>
             <a href={logo.link} title={logo.title}>
               See {logo.title}
             </a>
           </div>
-          <div className="separation-line"></div>
         </li>
       ))}
     </ul>
