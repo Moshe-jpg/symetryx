@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/symetryx/static/css/main.93bb54e3.css",
-    "main.js": "/symetryx/static/js/main.6e1eae59.js",
+    "main.css": "/symetryx/static/css/main.b9e70958.css",
+    "main.js": "/symetryx/static/js/main.5195de1b.js",
     "static/js/787.10167d57.chunk.js": "/symetryx/static/js/787.10167d57.chunk.js",
     "static/media/landmarks.png": "/symetryx/static/media/landmarks.e4d9fb0d405239244767.png",
     "static/media/sprott-money.png": "/symetryx/static/media/sprott-money.acebf1fe587c235d443c.png",
@@ -40,12 +40,12 @@
     "static/media/hvr.png": "/symetryx/static/media/hvr.713310a72c1ee6957ff7.png",
     "static/media/email.png": "/symetryx/static/media/email.dbc6bcc23ff7b0585ed1.png",
     "index.html": "/symetryx/index.html",
-    "main.93bb54e3.css.map": "/symetryx/static/css/main.93bb54e3.css.map",
-    "main.6e1eae59.js.map": "/symetryx/static/js/main.6e1eae59.js.map",
+    "main.b9e70958.css.map": "/symetryx/static/css/main.b9e70958.css.map",
+    "main.5195de1b.js.map": "/symetryx/static/js/main.5195de1b.js.map",
     "787.10167d57.chunk.js.map": "/symetryx/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93bb54e3.css",
-    "static/js/main.6e1eae59.js"
+    "static/css/main.b9e70958.css",
+    "static/js/main.5195de1b.js"
   ]
 }
