@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import RunHomepageAnimation from "../../helpers/animations/RunHomepageAnimation";
 import Navbar from "../Navbar";
 import LogoList from "../../logoList";
 import Footer from "../Footer";
 
 const Homepage = () => {
 
+  const HomeRef = useRef(null);
+
+  useEffect(() => {
+    RunHomepageAnimation(HomeRef.current);
+  }, []);
+
   return (
     <div className="homepage-container">
         <Navbar />
-      <a href="/">
-        <h1>Symetryx Corp.<span className="homepage-subheading">Private Investments</span></h1>
+      <a href="/" className="homepage-heading-container">
+        <h1 className="homepage-heading">Symetryx Corporation<span className="homepage-subheading">Venture Capital</span></h1>
       </a>
         <LogoList />
         <Footer />

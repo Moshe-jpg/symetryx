@@ -77,7 +77,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), #002ca580);
+  background: var(--black);
 }
 
 .homepage-container::before {
@@ -254,7 +254,7 @@ a {
 /* email component */
 
 .contact-container {
-  width: 30%;
+  min-width: 280px;
   height: 400%;
   display: flex;
   align-items: center;
@@ -263,9 +263,11 @@ a {
   flex-wrap: wrap;
   backdrop-filter: blur(5px);
   text-align: left;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 15px;
-  margin: 25px;
+  margin: 25px 20px 0;
+  border: 1px solid var(--light-transparent);
+  border-radius: 15px;
 }
 
 .contact-container address {
@@ -284,12 +286,47 @@ a {
   color: var(--white);
   filter: brightness(1);
   font-size: 1rem;
-  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.contact-container .hyperlink-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px; /* Spacing between links */
+  width: 100%;
+}
+
+.contact-container .hyperlink-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 55px;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.contact-container .hyperlink-container a:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Slight background on hover */
+}
+
+.contact-container .hyperlink-container a img {
+  width: 25px;
+  transition: width 0.3s;
+  margin-right: 15px;
+}
+
+.contact-container .hyperlink-container a span {
+  font-size: 1rem;
+  transition: font-size 0.3s; /* Smooth transition */
+  margin: 0;
 }
 
 .contact-container a {
-  margin: 10px 0;
   width: 100%;
+  line-height: 1.5;
 }
 
 form {
@@ -298,7 +335,7 @@ form {
   border: 1px solid var(--light-transparent);
   border-radius: 15px;
   padding: 10px;
-  margin: 25px;
+  margin: 25px 20px 10px;
 }
 
 form .inputBox-container {
@@ -399,6 +436,37 @@ form .inputBoxBtn:hover {
   height: 100%;
 }
 
+/* animations */
+
+.navbar a img {
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.homepage-heading-container {
+  overflow: hidden;
+}
+
+.homepage-heading {
+  transform: translateY(-100%);
+  visibility: hidden;
+}
+
+.homepage-subheading {
+  transform: translateY(-100%);
+  visibility: hidden;
+}
+
+.contact-container {
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+.form {
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
 @media screen and (max-width: 768px) {
   .homepage-container h1 {
     margin: 0 0 10px;
@@ -433,9 +501,6 @@ form .inputBoxBtn:hover {
   }
 
   /* footer */
-  .contact-container {
-    width: 100%;
-  }
 
   .contact-container .address {
     text-align: center;
@@ -449,6 +514,11 @@ form .inputBoxBtn:hover {
 
 /* For smaller screens like mobile */
 @media screen and (max-width: 480px) {
+
+  .homepage-container span {
+    font-size: 18px;
+  }
+
   .logo-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 5px;

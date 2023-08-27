@@ -34,7 +34,7 @@ const EmailForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form className="form" ref={form} onSubmit={sendEmail}>
       <div className="inputBox-container">
         <div className="inputBox">
           <input
