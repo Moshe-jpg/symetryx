@@ -57,7 +57,7 @@ a {
 }
 
 .navbar img {
-  width: 75px;
+  width: 7.5rem;
   margin: 25px 0 0;
   animation: rotateLogo 15s linear infinite;
 }
@@ -287,6 +287,9 @@ a {
   filter: brightness(1);
   font-size: 1rem;
   line-height: 1.5;
+}
+.contact-container .address .location a:hover {
+  text-decoration: none;
 }
 
 .contact-container .hyperlink-container {

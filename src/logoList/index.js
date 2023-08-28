@@ -11,7 +11,7 @@ import logo10 from "../assets/gaviti.png";
 import logo11 from "../assets/high-fusion.png";
 import logo12 from "../assets/hvr.png";
 import logo13 from "../assets/jassby.png";
-import logo14 from "../assets/landmarks.png";
+import logo14 from "../assets/landmark.png";
 import logo15 from "../assets/lanterra.png";
 import logo16 from "../assets/awz-ventures.png";
 import logo17 from "../assets/molecule.png";
@@ -31,6 +31,27 @@ import logo30 from "../assets/tiidal.png";
 import logo31 from "../assets/tipranks.png";
 import logo32 from "../assets/tzp.png";
 import logo33 from "../assets/sprott-money.png";
+import logo34 from "../assets/powers-real-estate.png";
+import logo35 from "../assets/lindvest.png";
+import logo36 from "../assets/pickering-town-center.avif";
+import logo37 from "../assets/shelborne-capital.png";
+import logo38 from "../assets/alpha-lithium.png";
+import logo39 from "../assets/medipharm-labs.png";
+import logo40 from "../assets/ether-capital.png";
+import logo41 from "../assets/harborside.png";
+import logo42 from "../assets/liquid-avatar.png";
+import logo43 from "../assets/lighthouse-credit-union.png";
+import logo44 from "../assets/novsn.png";
+import logo45 from "../assets/venterra-realty.png";
+import logo46 from "../assets/c21-investments.png";
+import logo47 from "../assets/osprey-minerals.png";
+import logo48 from "../assets/leaf.png";
+import logo49 from "../assets/fire-and-flower.png";
+import logo50 from "../assets/gold-hart.png";
+import logo51 from "../assets/american-landmark.png";
+import logo52 from "../assets/ngen.png";
+import logo53 from "../assets/round-13-capital.png";
+import logo54 from "../assets/universal-proptech.png";
 
 const logos = [
   {
@@ -58,14 +79,6 @@ const logos = [
     link: "https://nobul.com/",
   },
   {
-    name: "agritask",
-    alt: "agritask",
-    title: "Agritask",
-    desc: "Agritask is a leading Agronomic Intelligence platform connecting Food & Beverage enterprises with growers, ensuring quality, yield, and sustainability. Through machine learning and analytics, it transforms agronomic data into actionable insights, promoting sustainable supply chain operations and effective risk management.",
-    imageSrc: logo1,
-    link: "https://start.agritask.com/",
-  },
-  {
     name: "AWZ Ventures",
     alt: "AWZ ventures",
     title: "AWZ Ventures",
@@ -74,10 +87,26 @@ const logos = [
     link: "https://www.atidot.com/",
   },
   {
-    name: "landmarks",
-    alt: "landmarks",
-    title: "Land Marks",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius",
+    name: "agritask",
+    alt: "agritask",
+    title: "Agritask",
+    desc: "Agritask is a leading Agronomic Intelligence platform connecting Food & Beverage enterprises with growers, ensuring quality, yield, and sustainability. Through machine learning and analytics, it transforms agronomic data into actionable insights, promoting sustainable supply chain operations and effective risk management.",
+    imageSrc: logo1,
+    link: "https://start.agritask.com/",
+  },
+  {
+    name: "papr news",
+    alt: "papr news",
+    title: "Papr News",
+    desc: "PAPR, an AI-driven news app, curates global headlines from premier sources like BBC, CNN, and The Guardian. Leveraging advanced machine learning, PAPR tailors your news feed, ensuring you receive stories that resonate with your interests. Stay informed with PAPR, where the world's news meets personal relevance.",
+    imageSrc: logo26,
+    link: "https://www.papr.com ",
+  },
+  {
+    name: "landmark",
+    alt: "landmark",
+    title: "LandMark",
+    desc: "Landmark, a pioneering commercial real estate advisory firm, redefines the industry through its relationship-driven approach. Exclusively representing tenants, we eliminate conflicts of interest, ensuring landlords uphold lease obligations. Our commission-driven revenue fuels investment in a diverse team of experts, enhancing value for space occupiers. At Landmark, we don't just advise; we partner. Partner smarter with Landmark.",
     imageSrc: logo14,
     link: "",
   },
@@ -162,13 +191,176 @@ const logos = [
     link: "https://www.tzpgroup.com/",
   },
   {
-    name: "papr news",
-    alt: "papr news",
-    title: "Papr News",
-    desc: "PAPR, an AI-driven news app, curates global headlines from premier sources like BBC, CNN, and The Guardian. Leveraging advanced machine learning, PAPR tailors your news feed, ensuring you receive stories that resonate with your interests. Stay informed with PAPR, where the world's news meets personal relevance.",
-    imageSrc: logo26,
-    link: "",
+    name: "Powers",
+    alt: "Powers",
+    title: "Powers Property Group",
+    desc: "Powers Property Group, a dynamic retail commercial real estate conglomerate, offers holistic advisory, asset management, consulting, development, and leasing solutions. As seasoned owners, developers, and managers, we possess the acumen to amplify property value and optimize returns for our clients, both short-term and long-term. Trust in Powers for unmatched real estate expertise.",
+    imageSrc: logo34,
+    link: "https://www.powersproperty.com/",
   },
+  {
+    name: "Lindvest",
+    alt: "Lindvest",
+    title: "Lindvest Homes",
+    desc: "With a legacy dating back to 1952 under the H&R banner, Lindvest has transformed the landscape of land development. Since 2011, under the Lindvest name, our seasoned team has been crafting distinguished communities across Ontario. Renowned for meticulous planning, modern urban design, and superior construction, Lindvest continues to shape the future of premium home-building.",
+    imageSrc: logo35,
+    link: "https://www.lindvest.com/",
+  },
+  {
+    name: "PTC",
+    alt: "PTC",
+    title: "Pickering Town Centre",
+    desc: "Pickering Town Centre is a large regional shopping mall located in Pickering, Ontario, Canada. Opened in 1972 as Pickering Sheridan Mall, the mall has over 150 stores.",
+    imageSrc: logo36,
+    link: "https://pickeringtowncentre.com/",
+  },
+  {
+    name: "Shelborne Capital",
+    alt: "Shelborne Capital",
+    title: "Shelborne Capital",
+    desc: "Shelborne Capital is a pillar of integrity in real estate, fostering deep trust with investors. Our seasoned team specializes in multi-family and commercial assets, adeptly navigating today's complex economic terrain. Through strategic planning and risk-averse focus, we deliver conservatively managed, growth-oriented investment opportunities. Trust in Shelborne for prudent real estate ventures.",
+    imageSrc: logo37,
+    link: "https://shelbornecapital.com/",
+  },
+  {
+    name: "Alpha Lithium",
+    alt: "Alpha Lithium",
+    title: "Alpha Lithium",
+    desc: "Alpha Lithium is a pioneering force in the Argentine 'Lithium Triangle', assembling untapped land and unlocking potential reserves. With significant discoveries at Tolillar Salar and a promising presence in Hombre Muerto salar, they stand at the forefront of the next big lithium opportunity in a globally revered region.",
+    imageSrc: logo38,
+    link: "https://alphalithium.com/",
+  },
+
+  {
+    name: "Medipharm Labs",
+    alt: "Medipharm Labs",
+    title: "Medipharm Labs",
+    desc: "MediPharm Labs sets the gold standard in cannabinoid-based derivatives, merging pharmaceutical precision with top-quality cannabis. Prioritizing stability, safety, consistency, and rigorous testing, they ensure pure and accurate dosing from their GMP-certified facilities. Their globally recognized expertise positions them as a trusted leader in cannabis extracts and products for both domestic and international markets.",
+    imageSrc: logo39,
+    link: "https://www.medipharmlabs.com/",
+  },
+  {
+    name: "Ether Capital",
+    alt: "Ether Capital",
+    title: "Ether Capital",
+    desc: "Ether Capital, founded in 2018 by a blend of crypto experts, finance pros, and venture capitalists, serves as a leading gateway to Ethereum for capital markets. Witnessing Ethereum's ascent as a multi-billion-dollar powerhouse and its evolution with Ethereum 2.0's 'Proof of Stake', Ether Capital took a pioneering step in December 2021. They became the first public firm globally to substantially stake Ether, capitalizing on lucrative yields while ensuring about 95% of their portfolio aids in fortifying the Ethereum protocol.",
+    imageSrc: logo40,
+    link: "https://ethcap.co/",
+  },
+  {
+    name: "Harborside",
+    alt: "Harborside",
+    title: "Harborside",
+    desc: "Established as one of the world's premier cannabis retailers, Harborside has championed safe and inclusive access to cannabis in California. Renowned for its elite selection of award-winning products sourced from esteemed California producers, Harborside caters to both novices and connoisseurs. Whether you're exploring in-store or ordering online, their passionate team champions the holistic benefits of cannabis, emphasizing diversity, sustainability, and economic justice within the industry.",
+    imageSrc: logo41,
+    link: "https://shopharborside.com/",
+  },
+  {
+    name: "Liquid Avatar",
+    alt: "Liquid Avatar",
+    title: "Liquid Avatar",
+    desc: "Liquid Avatar revolutionizes user experiences through its Verifiable Credential ecosystem, bridging the identity gap in the Metaverse. They ensure safe, biometric logins, combat fake accounts, and offer custom branded wallets. Positioned at the forefront of Web3 innovations, they provide trusted solutions for a safer digital world.",
+    imageSrc: logo42,
+    link: "https://liquidavatar.com/solutions",
+  },
+  {
+    name: "Lighthouse Credit Union",
+    alt: "Lighthouse Credit Union",
+    title: "Lighthouse Credit Union",
+    desc: "Lighthouse, inspired by the distinct financial needs of the Jewish community, is a committed credit union serving the Greater Toronto Area. Beyond banking, they address unique community aspects like private school tuition and Jewish charity donations. Guided by Jewish values, they prioritize family, health, tradition, and philanthropy, donating 10% of profits back to the community. Lighthouse stands as a beacon of trust, transparency, and unwavering community support.",
+    imageSrc: logo43,
+    link: "https://lighthousecu.ca/",
+  },
+  {
+    name: "NOVSN",
+    alt: "NOVSN",
+    title: "NOVSN",
+    desc: "Founded in 1989 as part of a global bank group, Novation Solutions Limited (NOVSN) has emerged as a top-tier outsourcing service provider, specializing in document management, processing, and advanced print solutions. Joining ADERA Global Companies in 2015 and expanding into China in 2002, NOVSN has consistently innovated, now being recognized for elite security document printing.",
+    imageSrc: logo44,
+    link: "https://novsn.com/",
+  },
+  {
+    name: "Venterra Realty",
+    alt: "Venterra Realty",
+    title: "Venterra Realty",
+    desc: "Venterra, a leader in multi-family residential ventures in the southern U.S., manages assets worth $4.8 billion. Based in Houston and Toronto, they oversee 80 properties, emphasizing excellence and guided by core values. With a commitment to residents and employees alike, Venterra stands as an industry trailblazer.",
+    imageSrc: logo45,
+    link: "https://venterra.com/",
+  },
+  {
+    name: "C21 Investments",
+    alt: "C21 Investments",
+    title: "C21 Investments",
+    desc: "C21 Investments is dedicated to harnessing the multifaceted benefits of cannabis through the creation and distribution of premium, high-performance cannabis brands and products.",
+    imageSrc: logo46,
+    link: "https://www.cxxi.ca/",
+  },
+  {
+    name: "Osprey Minerals",
+    alt: "Osprey Minerals",
+    title: "Osprey Minerals",
+    desc: "Osprey Minerals Limited, an Australian firm, holds a promising exploration portfolio in Western Australia's East Kimberley region. Their goal is to boost the region's exploration potential and support a clean energy future.",
+    imageSrc: logo47,
+    link: "https://ospreyminerals.com.au/",
+  },
+  {
+    name: "LEAF",
+    alt: "LEAF",
+    title: "LEAF",
+    desc: "LEAF, introduced in 2015, is an automated system resembling a refrigerator, designed primarily for growing marijuana at home. Controlled via a smartphone app, it requires minimal maintenance: just plant seeds, change water weekly, and periodically replace nutrient cartridges and air filters. Ensuring pesticide-free growth, deliveries began in September 2017.",
+    imageSrc: logo48,
+    link: "https://www.getleaf.co/",
+  },
+  {
+    name: "Fire & Flower",
+    alt: "Fire & Flower",
+    title: "Fire & Flower",
+    desc: "Fire & Flower is a welcoming cannabis shop for both veterans and the canna-curious. Founded by cannabis enthusiasts, we prioritize a tailored, simple shopping experience for every visitor. Whether you're seasoned or new, we're here to guide and chat. Feel at home with us.",
+    imageSrc: logo49,
+    link: "https://fireandflower.com/",
+  },
+  {
+    name: "Gold Hart Mining Corporation",
+    alt: "Gold Hart Mining Corporation",
+    title: "Gold Hart Mining Corporation",
+    desc: "Gold Hart Mining Corp specializes in gold, silver, and copper assets, positioned near major players. Steered by a former director of a national geological organization, we combine prime location with expert leadership.",
+    imageSrc: logo50,
+    link: "https://www.linkedin.com/company/gold-hart-mining-corporation/",
+  },
+  {
+    name: "American Landmark",
+    alt: "American Landmark",
+    title: "American Landmark",
+    desc: "American Landmark Properties is a real estate investment group with a 30-year track record of delivering consistently strong returns to its investors. The company’s acquisition philosophy is to seek and acquire value-add and opportunistic mid-cap office, industrial and multifamily properties in the Midwest and East Coast. Our skills and expertise include syndication, financing, leasing, sales and marketing, repositioning, renovation property/asset management and disposition.",
+    imageSrc: logo51,
+    link: "https://www.americanlandmark.com/",
+  },
+  {
+    name: "NGen",
+    alt: "NGen",
+    title: "NGen",
+    desc: "NGen, Canada's leader in the Global Innovation Cluster for Advanced Manufacturing, is a non-profit dedicated to advancing digital transformation in manufacturing. Backed by Canada's Global Innovation Clusters Initiative, NGen champions superior manufacturing capabilities, technological advancements, and operational excellence. Their projects focus on fortifying supply chains, environmental protection, healthcare enhancement, and nationwide technology adoption.",
+    imageSrc: logo52,
+    link: "https://www.ngen.ca/",
+  },
+  {
+    name: "Round 13 Capital",
+    alt: "Round 13 Capital",
+    title: "Round 13 Capital",
+    desc: "Round 13 principally focuses on growth-stage venture capital and later-stage tech-enabled services, while selectively evaluating seed stage opportunities.",
+    imageSrc: logo53,
+    link: "https://round13.com/",
+  },
+  {
+    name: "Universal Proptech",
+    alt: "Universal Proptech",
+    title: "Universal Proptech",
+    desc: "Universal PropTech Inc., is a Canadian sustainable infrastructure solution provider with a focus on renewable energy and technology. Through its subsidiary, VCI Controls Inc., they specialize in intelligent building technology, integrating advanced communication systems, digital controls, mechanical services, and energy efficiency solutions.",
+    imageSrc: logo54,
+    link: "https://universalproptech.com/",
+  },
+  
+
   {
     name: "atidot",
     alt: "atidot",

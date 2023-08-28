@@ -16,7 +16,7 @@ const Homepage = () => {
     <div className="homepage-container">
         <Navbar />
       <a href="/" className="homepage-heading-container">
-        <h1 className="homepage-heading">Symetryx Corporation<span className="homepage-subheading">Venture Capital</span></h1>
+        <h1 className="homepage-heading">Symetryx Corporation</h1>
       </a>
         <LogoList />
         <Footer />

@@ -5,7 +5,6 @@ import email from "../../assets/email.png";
 import mgLogo from "../../assets/moshe-gadol-logo.webp";
 
 const Footer = () => {
-
   const ContactRef = useRef(null);
 
   useEffect(() => {
@@ -18,17 +17,24 @@ const Footer = () => {
         <div className="contact-container">
           <address className="address">
             <span className="location">
-              2828 Bathurst Street
-              <br />
-              Suite 400
-              <br />
-              North York, Ontario
-              <br />
-              M6B 3A7
+              <a href="https://goo.gl/maps/ZLE4Nd7Wkm22uAzQ8">
+                Symetryx Corporation
+                <br />
+                2828 Bathurst Street
+                <br />
+                Suite 400
+                <br />
+                Toronto, Ontario, Canada
+                <br />
+                M6B 3A3
+              </a>
             </span>
           </address>
           <div className="hyperlink-container">
-            <a href="mailto:info@symetryx.com"><img src={email} alt="contact by email"></img><span>info@symetryx.com</span></a>
+            <a href="mailto:info@symetryx.com">
+              <img src={email} alt="contact by email"></img>
+              <span>info@symetryx.com</span>
+            </a>
           </div>
         </div>
         <EmailForm />
