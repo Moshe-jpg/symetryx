@@ -1,14 +1,12 @@
 import logo1 from "../assets/agritask.png";
 import logo2 from "../assets/atidot.png";
 import logo3 from "../assets/binah.png";
-import logo4 from "../assets/cache.png";
 import logo5 from "../assets/cba-pharma.png";
 import logo6 from "../assets/chargerquest.png";
 import logo7 from "../assets/dealmaker.png";
 import logo8 from "../assets/expresa.png";
 import logo9 from "../assets/floraworks.png";
 import logo10 from "../assets/gaviti.png";
-import logo11 from "../assets/high-fusion.png";
 import logo12 from "../assets/hvr.png";
 import logo13 from "../assets/jassby.png";
 import logo14 from "../assets/landmark.png";
@@ -16,9 +14,7 @@ import logo15 from "../assets/lanterra.png";
 import logo16 from "../assets/awz-ventures.png";
 import logo17 from "../assets/molecule.png";
 import logo18 from "../assets/moneta.png";
-import logo19 from "../assets/moodmd.png";
 import logo20 from "../assets/neura.png";
-import logo21 from "../assets/newleaf.png";
 import logo22 from "../assets/nobul.png";
 import logo23 from "../assets/noveto.png";
 import logo24 from "../assets/octopai.png";
@@ -34,19 +30,13 @@ import logo33 from "../assets/sprott-money.png";
 import logo34 from "../assets/powers-real-estate.png";
 import logo35 from "../assets/lindvest.png";
 import logo36 from "../assets/pickering-town-center.avif";
-import logo37 from "../assets/shelborne-capital.png";
 import logo38 from "../assets/alpha-lithium.png";
-import logo39 from "../assets/medipharm-labs.png";
 import logo40 from "../assets/ether-capital.png";
-import logo41 from "../assets/harborside.png";
-import logo42 from "../assets/liquid-avatar.png";
 import logo43 from "../assets/lighthouse-credit-union.png";
 import logo44 from "../assets/novsn.png";
 import logo45 from "../assets/venterra-realty.png";
-import logo46 from "../assets/c21-investments.png";
 import logo47 from "../assets/osprey-minerals.png";
 import logo48 from "../assets/leaf.png";
-import logo49 from "../assets/fire-and-flower.png";
 import logo50 from "../assets/gold-hart.png";
 import logo51 from "../assets/american-landmark.png";
 import logo52 from "../assets/ngen.png";
@@ -143,14 +133,6 @@ const logos = [
     link: "https://www.dealmaker.tech/",
   },
   {
-    name: "cache",
-    alt: "cache",
-    title: "Cache Exploration",
-    desc: "Cache Exploration is exploring for near-surface gold in Nunavut at its 100%-owned Kiyuk Lake Gold Property. 12K meters of drilling have revealed multiple gold intercepts exceeding 3g/t. The strike length is 15km with 4 mineralized zones and 5 new target areas identified and ready for drilling.",
-    imageSrc: logo4,
-    link: "http://www.cacheexploration.com/",
-  },
-  {
     name: "floraworks",
     alt: "floraworks",
     title: "FloraWorks",
@@ -165,14 +147,6 @@ const logos = [
     desc: "Molecule partners with clients to produce cannabis-infused beverages and edibles. Offering infrastructure, expertise, technology, and licensing, we empower craft producers to craft quality consumable cannabis products.",
     imageSrc: logo17,
     link: "https://molecule.ca/",
-  },
-  {
-    name: "high-fusion",
-    alt: "high-fusion",
-    title: "High Fusion",
-    desc: "High Fusion, Inc. is a multi-state cannabis company that specializes in the manufacturing and distribution of the industry’s leading brands and products.",
-    imageSrc: logo11,
-    link: "https://high-fusion.com/",
   },
   {
     name: "tipranks",
@@ -215,29 +189,12 @@ const logos = [
     link: "https://pickeringtowncentre.com/",
   },
   {
-    name: "Shelborne Capital",
-    alt: "Shelborne Capital",
-    title: "Shelborne Capital",
-    desc: "Shelborne Capital is a pillar of integrity in real estate, fostering deep trust with investors. Our seasoned team specializes in multi-family and commercial assets, adeptly navigating today's complex economic terrain. Through strategic planning and risk-averse focus, we deliver conservatively managed, growth-oriented investment opportunities. Trust in Shelborne for prudent real estate ventures.",
-    imageSrc: logo37,
-    link: "https://shelbornecapital.com/",
-  },
-  {
     name: "Alpha Lithium",
     alt: "Alpha Lithium",
     title: "Alpha Lithium",
     desc: "Alpha Lithium is a pioneering force in the Argentine 'Lithium Triangle', assembling untapped land and unlocking potential reserves. With significant discoveries at Tolillar Salar and a promising presence in Hombre Muerto salar, they stand at the forefront of the next big lithium opportunity in a globally revered region.",
     imageSrc: logo38,
     link: "https://alphalithium.com/",
-  },
-
-  {
-    name: "Medipharm Labs",
-    alt: "Medipharm Labs",
-    title: "Medipharm Labs",
-    desc: "MediPharm Labs sets the gold standard in cannabinoid-based derivatives, merging pharmaceutical precision with top-quality cannabis. Prioritizing stability, safety, consistency, and rigorous testing, they ensure pure and accurate dosing from their GMP-certified facilities. Their globally recognized expertise positions them as a trusted leader in cannabis extracts and products for both domestic and international markets.",
-    imageSrc: logo39,
-    link: "https://www.medipharmlabs.com/",
   },
   {
     name: "Ether Capital",
@@ -246,22 +203,6 @@ const logos = [
     desc: "Ether Capital, founded in 2018 by a blend of crypto experts, finance pros, and venture capitalists, serves as a leading gateway to Ethereum for capital markets. Witnessing Ethereum's ascent as a multi-billion-dollar powerhouse and its evolution with Ethereum 2.0's 'Proof of Stake', Ether Capital took a pioneering step in December 2021. They became the first public firm globally to substantially stake Ether, capitalizing on lucrative yields while ensuring about 95% of their portfolio aids in fortifying the Ethereum protocol.",
     imageSrc: logo40,
     link: "https://ethcap.co/",
-  },
-  {
-    name: "Harborside",
-    alt: "Harborside",
-    title: "Harborside",
-    desc: "Established as one of the world's premier cannabis retailers, Harborside has championed safe and inclusive access to cannabis in California. Renowned for its elite selection of award-winning products sourced from esteemed California producers, Harborside caters to both novices and connoisseurs. Whether you're exploring in-store or ordering online, their passionate team champions the holistic benefits of cannabis, emphasizing diversity, sustainability, and economic justice within the industry.",
-    imageSrc: logo41,
-    link: "https://shopharborside.com/",
-  },
-  {
-    name: "Liquid Avatar",
-    alt: "Liquid Avatar",
-    title: "Liquid Avatar",
-    desc: "Liquid Avatar revolutionizes user experiences through its Verifiable Credential ecosystem, bridging the identity gap in the Metaverse. They ensure safe, biometric logins, combat fake accounts, and offer custom branded wallets. Positioned at the forefront of Web3 innovations, they provide trusted solutions for a safer digital world.",
-    imageSrc: logo42,
-    link: "https://liquidavatar.com/solutions",
   },
   {
     name: "Lighthouse Credit Union",
@@ -288,14 +229,6 @@ const logos = [
     link: "https://venterra.com/",
   },
   {
-    name: "C21 Investments",
-    alt: "C21 Investments",
-    title: "C21 Investments",
-    desc: "C21 Investments is dedicated to harnessing the multifaceted benefits of cannabis through the creation and distribution of premium, high-performance cannabis brands and products.",
-    imageSrc: logo46,
-    link: "https://www.cxxi.ca/",
-  },
-  {
     name: "Osprey Minerals",
     alt: "Osprey Minerals",
     title: "Osprey Minerals",
@@ -310,14 +243,6 @@ const logos = [
     desc: "LEAF, introduced in 2015, is an automated system resembling a refrigerator, designed primarily for growing marijuana at home. Controlled via a smartphone app, it requires minimal maintenance: just plant seeds, change water weekly, and periodically replace nutrient cartridges and air filters. Ensuring pesticide-free growth, deliveries began in September 2017.",
     imageSrc: logo48,
     link: "https://www.getleaf.co/",
-  },
-  {
-    name: "Fire & Flower",
-    alt: "Fire & Flower",
-    title: "Fire & Flower",
-    desc: "Fire & Flower is a welcoming cannabis shop for both veterans and the canna-curious. Founded by cannabis enthusiasts, we prioritize a tailored, simple shopping experience for every visitor. Whether you're seasoned or new, we're here to guide and chat. Feel at home with us.",
-    imageSrc: logo49,
-    link: "https://fireandflower.com/",
   },
   {
     name: "Gold Hart Mining Corporation",
@@ -359,7 +284,6 @@ const logos = [
     imageSrc: logo54,
     link: "https://universalproptech.com/",
   },
-  
 
   {
     name: "atidot",
@@ -410,28 +334,12 @@ const logos = [
     link: "https://jassby.com/",
   },
   {
-    name: "moodmd",
-    alt: "moodmd",
-    title: "MoodMD",
-    desc: "MoodMD employs advanced AI, drawing from extensive data to determine optimal treatment recommendations. By merging human expertise with AI, we offer personalized therapy, behavioral coaching, lifestyle advice, neurohormonal and genetic tests, mood assessments, targeted supplementation, psycho-social education, precision drug guidance, and AI-guided treatments for unparalleled care.",
-    imageSrc: logo19,
-    link: "https://www.moodmd.com/",
-  },
-  {
     name: "neura",
     alt: "neura",
     title: "Neura",
     desc: "Neura is an AI and ML-based customer engagement platform that empowers mobile brands to adapt to customers’ preferences and needs in real-time. Using Neura’s ability to predict users’ actions in mobile apps, brands can increase engagement, conversion, and retention rates by making the right offer, to the right customer, at the right time.",
     imageSrc: logo20,
     link: "https://otonomo.io/neura/",
-  },
-  {
-    name: "newleaf",
-    alt: "newleaf",
-    title: "Newleaf",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius",
-    imageSrc: logo21,
-    link: "https://www.newleafcan.com/",
   },
   {
     name: "octopai",
