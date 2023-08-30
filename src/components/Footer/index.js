@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import RunContactAnimation from "../../helpers/animations/RunContactAnimation";
 import EmailForm from "../../helpers/EmailForm/index.js";
-import email from "../../assets/email.png";
+import email from "../../assets/email.webp";
 import mgLogo from "../../assets/moshe-gadol-logo.webp";
 
 const Footer = () => {

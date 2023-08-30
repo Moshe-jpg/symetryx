@@ -1,47 +1,48 @@
-import logo1 from "../assets/agritask.png";
-import logo2 from "../assets/atidot.png";
-import logo3 from "../assets/binah.png";
-import logo5 from "../assets/cba-pharma.png";
-import logo6 from "../assets/chargerquest.png";
-import logo7 from "../assets/dealmaker.png";
-import logo8 from "../assets/expresa.png";
-import logo9 from "../assets/floraworks.png";
-import logo10 from "../assets/gaviti.png";
-import logo12 from "../assets/hvr.png";
-import logo13 from "../assets/jassby.png";
-import logo14 from "../assets/landmark.png";
-import logo15 from "../assets/lanterra.png";
-import logo16 from "../assets/awz-ventures.png";
-import logo17 from "../assets/molecule.png";
-import logo18 from "../assets/moneta.png";
-import logo20 from "../assets/neura.png";
-import logo22 from "../assets/nobul.png";
-import logo23 from "../assets/noveto.png";
-import logo24 from "../assets/octopai.png";
-import logo25 from "../assets/panorays.png";
-import logo26 from "../assets/papr-news.png";
-import logo27 from "../assets/rewire.png";
-import logo28 from "../assets/rocketdollar.png";
-import logo29 from "../assets/sproutt.png";
-import logo30 from "../assets/tiidal.png";
-import logo31 from "../assets/tipranks.png";
-import logo32 from "../assets/tzp.png";
-import logo33 from "../assets/sprott-money.png";
-import logo34 from "../assets/powers-real-estate.png";
-import logo35 from "../assets/lindvest.png";
+import logo1 from "../assets/agritask.webp";
+import logo2 from "../assets/atidot.webp";
+import logo3 from "../assets/binah.webp";
+import logo5 from "../assets/cba-pharma.webp";
+import logo6 from "../assets/chargerquest.webp";
+import logo7 from "../assets/dealmaker.webp";
+import logo8 from "../assets/expresa.webp";
+import logo9 from "../assets/floraworks.webp";
+import logo10 from "../assets/gaviti.webp";
+import logo12 from "../assets/hvr.webp";
+import logo13 from "../assets/jassby.webp";
+import logo14 from "../assets/landmark.webp";
+import logo15 from "../assets/lanterra.webp";
+import logo16 from "../assets/awz-ventures.webp";
+import logo17 from "../assets/molecule.webp";
+import logo18 from "../assets/moneta.webp";
+import logo20 from "../assets/neura.webp";
+import logo22 from "../assets/nobul.webp";
+import logo23 from "../assets/noveto.webp";
+import logo24 from "../assets/octopai.webp";
+import logo25 from "../assets/panorays.webp";
+import logo26 from "../assets/papr-news.webp";
+import logo27 from "../assets/rewire.webp";
+import logo28 from "../assets/rocketdollar.webp";
+import logo29 from "../assets/sproutt.webp";
+import logo30 from "../assets/tiidal.webp";
+import logo31 from "../assets/tipranks.webp";
+import logo32 from "../assets/tzp.webp";
+import logo33 from "../assets/sprott-money.webp";
+import logo34 from "../assets/powers-real-estate.webp";
+import logo35 from "../assets/lindvest.webp";
 import logo36 from "../assets/pickering-town-center.avif";
-import logo38 from "../assets/alpha-lithium.png";
-import logo40 from "../assets/ether-capital.png";
-import logo43 from "../assets/lighthouse-credit-union.png";
-import logo44 from "../assets/novsn.png";
-import logo45 from "../assets/venterra-realty.png";
-import logo47 from "../assets/osprey-minerals.png";
-import logo48 from "../assets/leaf.png";
-import logo50 from "../assets/gold-hart.png";
-import logo51 from "../assets/american-landmark.png";
-import logo52 from "../assets/ngen.png";
-import logo53 from "../assets/round-13-capital.png";
-import logo54 from "../assets/universal-proptech.png";
+import logo38 from "../assets/alpha-lithium.webp";
+import logo40 from "../assets/ether-capital.webp";
+import logo43 from "../assets/lighthouse-credit-union.webp";
+import logo44 from "../assets/novsn.webp";
+import logo45 from "../assets/venterra-realty.webp";
+import logo47 from "../assets/osprey-minerals.webp";
+import logo48 from "../assets/leaf.webp";
+import logo50 from "../assets/gold-hart.webp";
+import logo51 from "../assets/american-landmark.webp";
+import logo52 from "../assets/ngen.webp";
+import logo53 from "../assets/round-13-capital.webp";
+import logo54 from "../assets/universal-proptech.webp";
+import logo55 from "../assets/aden-senior-living.webp";
 
 const logos = [
   {
@@ -284,7 +285,14 @@ const logos = [
     imageSrc: logo54,
     link: "https://universalproptech.com/",
   },
-
+  {
+    name: "Aden Senior Living",
+    alt: "Aden Senior Living",
+    title: "Aden Senior Living",
+    desc: "Aden Senior Living offers premier club-level, assisted, and memory care accommodations. Merging luxury amenities with personalized wellness programs, residents enjoy spacious apartments, unparalleled hospitality, and a perfect blend of independence and care. Surrounded by nature yet close to urban conveniences, it's an idyllic retirement haven.",
+    imageSrc: logo55,
+    link: "https://www.adenseniorliving.com/",
+  },
   {
     name: "atidot",
     alt: "atidot",

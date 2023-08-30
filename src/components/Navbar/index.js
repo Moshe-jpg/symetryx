@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/symetryx-logo.png"
+import logo from "../../assets/symetryx-logo.webp"
 
 const Navbar = () => {
     return (

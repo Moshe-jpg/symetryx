@@ -166,8 +166,6 @@ a {
   opacity: 0;
 }
 
-
-
 .logo-container .card .content {
   position: absolute; /* Position content on top of logo */
   top: 0;
@@ -200,7 +198,6 @@ a {
 .content h2::-webkit-scrollbar {
   display: none;
 }
-
 
 .content p {
   font-size: 12px;
@@ -280,14 +277,16 @@ a {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  font-style: normal;
 }
 
 .contact-container .address .location {
   color: var(--white);
   filter: brightness(1);
-  font-size: 1rem;
+  font-size: 22px;
   line-height: 1.5;
 }
+
 .contact-container .address .location a:hover {
   text-decoration: none;
 }
@@ -309,6 +308,7 @@ a {
   flex-direction: row;
   height: 55px;
   transition: background-color 0.3s; /* Smooth hover effect */
+  text-decoration: underline;
 }
 
 .contact-container .hyperlink-container a:hover {
@@ -413,7 +413,7 @@ form .inputBoxBtn:hover {
 
 /* website container */
 
- .website-container {
+.website-container {
   width: 100%;
   background: var(--black);
   display: flex;
@@ -423,19 +423,19 @@ form .inputBoxBtn:hover {
   padding-bottom: 15px;
 }
 
- .website-container p {
-  font-size: 1.25rem;
+.website-container p {
+  font-size: 16px;
 }
 
- .website-container a {
+.website-container a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  height: 22px;
   cursor: pointer;
 }
 
- .website-container a img {
+.website-container a img {
   height: 100%;
 }
 
@@ -512,12 +512,10 @@ form .inputBoxBtn:hover {
   .contact-container .address .location {
     margin: 10px auto;
   }
-
 }
 
 /* For smaller screens like mobile */
 @media screen and (max-width: 480px) {
-
   .homepage-container span {
     font-size: 18px;
   }
