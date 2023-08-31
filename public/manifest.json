@@ -1,21 +1,11 @@
 {
   "short_name": "Symetryx",
-  "name": "Symetryx Corp. Website",
+  "name": "Symetryx Corporation Website",
   "icons": [
     {
       "src": "symetryx-logo.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "symetryx-logo.webp",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "symetryx-logo.webp",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
