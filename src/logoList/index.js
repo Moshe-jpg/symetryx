@@ -43,7 +43,6 @@ import logo52 from "../assets/ngen.webp";
 import logo53 from "../assets/round-13-capital.webp";
 import logo54 from "../assets/universal-proptech.webp";
 import logo55 from "../assets/aden-senior-living.webp";
-import papr from "../assets/papr-news.webp"
 
 const logos = [
   {
@@ -426,7 +425,6 @@ const LogoList = () => {
           </div>
         </li>
       ))}
-      <img src={papr} alt="" style={{width: "500px", background: "#ffffff"}}/>
     </ul>
     </>
   );
