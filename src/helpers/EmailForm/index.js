@@ -48,7 +48,7 @@ const EmailForm = () => {
         <div className="inputBox">
           <input
             type="company"
-            name="user_user_company"
+            name="user_company"
             required="required"
             placeholder="* Company"
           />

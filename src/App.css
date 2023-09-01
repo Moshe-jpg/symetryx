@@ -5,7 +5,7 @@
   --black: #000000;
   --light-transparent: rgba(255, 255, 255, 0.75);
   --dark-transparent: rgba(255, 255, 255, 0.3);
-  --amex-blue: #164789;
+  --amex-blue: #279eff;
 }
 
 * {
@@ -103,7 +103,7 @@ a {
 }
 
 .homepage-container span {
-  color: var(--white);
+  color: var(--black);
   display: block;
   font-size: 1.5rem;
   filter: brightness(0.6);
@@ -158,7 +158,7 @@ a {
 }
 
 .logo-container .card .circle .logo {
-  width: 50%;
+  width: 70%;
   transition: transform 0.5s, opacity 0.5s;
 }
 
@@ -167,14 +167,9 @@ a {
   opacity: 0;
 }
 
-.logo-container .card .circle .logo[alt="papr news"] {
+.logo-container .card .circle .logo[alt="papr news"], .logo-container .card .circle .logo[alt="cba-pharma"], .logo-container .card .circle .logo[alt="Osprey Minerals"]  {
   width: 100%;
 }
-
-.logo-container .card .circle .logo[alt="PTC"] {
-  width: 55%;
-}
-
 
 .logo-container .card .content {
   position: absolute; /* Position content on top of logo */
@@ -203,6 +198,9 @@ a {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content h2::-webkit-scrollbar {
@@ -214,6 +212,8 @@ a {
   margin: 5px 0;
   overflow-y: auto;
   padding: 0 10px;
+  height: auto;
+  max-height: 65%;
 }
 
 .content a {
@@ -243,7 +243,7 @@ a {
   justify-content: space-evenly;
   flex-direction: column;
   z-index: 100;
-  background: var(--black);
+  /* background: var(--black); */
   color: var(--white);
 }
 
@@ -297,8 +297,13 @@ a {
   line-height: 1.5;
 }
 
+.contact-container .address .location a {
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+
 .contact-container .address .location a:hover {
-  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05); /* Slight background on hover */
 }
 
 .contact-container .hyperlink-container {
@@ -317,8 +322,8 @@ a {
   justify-content: center;
   flex-direction: row;
   height: 55px;
-  transition: background-color 0.3s; /* Smooth hover effect */
-  text-decoration: underline;
+  background-color: transparent;
+  transition: background-color 0.3s;
 }
 
 .contact-container .hyperlink-container a:hover {
@@ -386,6 +391,7 @@ form .inputBox input {
 
 form .inputBox input::placeholder {
   font-size: 18px;
+  color: var(--white);
 }
 
 form .inputBox .inputBox-message-input {
@@ -401,8 +407,8 @@ form .inputBoxBtn-Container {
 }
 
 form .inputBoxBtn {
-  background: var(--black);
-  color: var(--white);
+  background: var(--white);
+  color: var(--amex-blue);
   font-size: 22px;
   padding: 5px 10px;
   border-radius: 15px;
@@ -411,8 +417,8 @@ form .inputBoxBtn {
 }
 
 form .inputBoxBtn:hover {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
 }
 
 .footer .last-p {
@@ -425,7 +431,7 @@ form .inputBoxBtn:hover {
 
 .website-container {
   width: 100%;
-  background: var(--black);
+  /* background: var(--black); */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -21,7 +21,7 @@ import logo24 from "../assets/octopai.webp";
 import logo25 from "../assets/panorays.webp";
 import logo26 from "../assets/papr-news.webp";
 import logo27 from "../assets/rewire.webp";
-import logo28 from "../assets/rocketdollar.webp";
+// import logo28 from "../assets/rocketdollar.webp";
 import logo29 from "../assets/sproutt.webp";
 import logo30 from "../assets/tiidal.webp";
 import logo31 from "../assets/tipranks.webp";
@@ -29,7 +29,7 @@ import logo32 from "../assets/tzp.webp";
 import logo33 from "../assets/sprott-money.webp";
 import logo34 from "../assets/powers-real-estate.webp";
 import logo35 from "../assets/lindvest.webp";
-import logo36 from "../assets/pickering-town-center.avif";
+import logo36 from "../assets/pickering-town-center.webp";
 import logo38 from "../assets/alpha-lithium.webp";
 import logo40 from "../assets/ether-capital.webp";
 import logo43 from "../assets/lighthouse-credit-union.webp";
@@ -373,14 +373,14 @@ const logos = [
     imageSrc: logo27,
     link: "https://www.rewire.co.il/",
   },
-  {
-    name: "rocketdollar",
-    alt: "rocketdollar",
-    title: "RocketDollar",
-    desc: "Rocket Dollar empowers individuals to diversify their IRA/401(k) investments into alternative assets like real estate, crypto, and startups while retaining tax advantages. Serving customers nationwide, their platform simplifies and secures the process of venturing beyond traditional investments.",
-    imageSrc: logo28,
-    link: "https://www.rocketdollar.com/",
-  },
+  // {
+  //   name: "rocketdollar",
+  //   alt: "rocketdollar",
+  //   title: "RocketDollar",
+  //   desc: "Rocket Dollar empowers individuals to diversify their IRA/401(k) investments into alternative assets like real estate, crypto, and startups while retaining tax advantages. Serving customers nationwide, their platform simplifies and secures the process of venturing beyond traditional investments.",
+  //   imageSrc: logo28,
+  //   link: "https://www.rocketdollar.com/",
+  // },
   {
     name: "sproutt",
     alt: "sproutt",
@@ -410,22 +410,22 @@ const logos = [
 const LogoList = () => {
   return (
     <>
-    <ul className="logo-container">
-      {logos.map((logo, i) => (
-        <li key={i} className="card">
-          <div className="circle">
-            <img className="logo" src={logo.imageSrc} alt={logo.alt} />
-          </div>
-          <div className="content">
-            <h2>{logo.title}</h2>
-            <p className="para">{logo.desc}</p>
-            <a href={logo.link} title={logo.title}>
-              See {logo.title}
-            </a>
-          </div>
-        </li>
-      ))}
-    </ul>
+      <ul className="logo-container">
+        {logos.map((logo, i) => (
+          <li key={i} className="card">
+            <div className="circle">
+              <img className="logo" src={logo.imageSrc} alt={logo.alt} />
+            </div>
+            <div className="content">
+              <h2>{logo.title}</h2>
+              <p className="para">{logo.desc}</p>
+              <a href={logo.link} title={logo.title} target="_blank"rel="noreferrer" >
+                See {logo.title}
+              </a>
+            </div>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
