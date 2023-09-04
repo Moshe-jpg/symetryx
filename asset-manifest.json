@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6159534b.css",
-    "main.js": "/static/js/main.8de5cd9e.js",
+    "main.css": "/static/css/main.93400fd8.css",
+    "main.js": "/static/js/main.2c2f3a1f.js",
     "static/js/787.10167d57.chunk.js": "/static/js/787.10167d57.chunk.js",
     "static/media/noveto.webp": "/static/media/noveto.295b9986720ede67773c.webp",
     "static/media/sprott-money.webp": "/static/media/sprott-money.71b6218fb023340c89f2.webp",
@@ -51,12 +51,12 @@
     "static/media/leaf.webp": "/static/media/leaf.e72acd06def864dbf0be.webp",
     "index.html": "/index.html",
     "static/media/landmark.webp": "/static/media/landmark.77b350f9288284f668db.webp",
-    "main.6159534b.css.map": "/static/css/main.6159534b.css.map",
-    "main.8de5cd9e.js.map": "/static/js/main.8de5cd9e.js.map",
+    "main.93400fd8.css.map": "/static/css/main.93400fd8.css.map",
+    "main.2c2f3a1f.js.map": "/static/js/main.2c2f3a1f.js.map",
     "787.10167d57.chunk.js.map": "/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6159534b.css",
-    "static/js/main.8de5cd9e.js"
+    "static/css/main.93400fd8.css",
+    "static/js/main.2c2f3a1f.js"
   ]
 }
