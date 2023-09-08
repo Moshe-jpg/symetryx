@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.93400fd8.css",
-    "main.js": "/static/js/main.2c2f3a1f.js",
+    "main.css": "/static/css/main.1abcd96d.css",
+    "main.js": "/static/js/main.b6d7b020.js",
     "static/js/787.10167d57.chunk.js": "/static/js/787.10167d57.chunk.js",
     "static/media/noveto.webp": "/static/media/noveto.295b9986720ede67773c.webp",
     "static/media/sprott-money.webp": "/static/media/sprott-money.71b6218fb023340c89f2.webp",
@@ -11,6 +11,7 @@
     "static/media/atidot.webp": "/static/media/atidot.44c33b5035c2e73ea881.webp",
     "static/media/novsn.webp": "/static/media/novsn.dfde06970c090a937195.webp",
     "static/media/binah.webp": "/static/media/binah.b0593bf931a598d2c0b8.webp",
+    "index.html": "/index.html",
     "static/media/panorays.webp": "/static/media/panorays.98959078f0a3fcdfaec5.webp",
     "static/media/octopai.webp": "/static/media/octopai.802c7eef983823c19e2c.webp",
     "static/media/awz-ventures.webp": "/static/media/awz-ventures.278551cb3c8c0c253203.webp",
@@ -39,6 +40,7 @@
     "static/media/papr-news.webp": "/static/media/papr-news.e5229a9180733f4b560e.webp",
     "static/media/agritask.webp": "/static/media/agritask.72c929eb0a98e9c50510.webp",
     "static/media/chargerquest.webp": "/static/media/chargerquest.8814634ca19dc60b5daf.webp",
+    "static/media/landmark.webp": "/static/media/landmark.ff341873b481899d030d.webp",
     "static/media/lindvest.webp": "/static/media/lindvest.f54542d2a0050f90b928.webp",
     "static/media/lighthouse-credit-union.webp": "/static/media/lighthouse-credit-union.2e48053ce147985dd40f.webp",
     "static/media/gaviti.webp": "/static/media/gaviti.eedd11fb500a44fb74d6.webp",
@@ -49,14 +51,12 @@
     "static/media/moneta.webp": "/static/media/moneta.e0ab50729738cf9b9e0f.webp",
     "static/media/jassby.webp": "/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
     "static/media/leaf.webp": "/static/media/leaf.e72acd06def864dbf0be.webp",
-    "index.html": "/index.html",
-    "static/media/landmark.webp": "/static/media/landmark.77b350f9288284f668db.webp",
-    "main.93400fd8.css.map": "/static/css/main.93400fd8.css.map",
-    "main.2c2f3a1f.js.map": "/static/js/main.2c2f3a1f.js.map",
+    "main.1abcd96d.css.map": "/static/css/main.1abcd96d.css.map",
+    "main.b6d7b020.js.map": "/static/js/main.b6d7b020.js.map",
     "787.10167d57.chunk.js.map": "/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93400fd8.css",
-    "static/js/main.2c2f3a1f.js"
+    "static/css/main.1abcd96d.css",
+    "static/js/main.b6d7b020.js"
   ]
 }
