@@ -6,23 +6,589 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Symetryx is a privately venture capital corporation located in Toronto, Canada"
+      content="Symetryx is a privately owned venture capital corporation located in Toronto, Canada"
     />
     <meta property="og:image" content="symetryx.com/symetryx-logo.webp" />
-    <meta name="og:image:secure_url" content="symetryx.com/symetryx-logo.webp" />
+    <meta
+      name="og:image:secure_url"
+      content="symetryx.com/symetryx-logo.webp"
+    />
     <meta name="og:image:width" content="600" />
     <meta name="og:image:height" content="300" />
     <meta name="og:type" property="og:type" content="website" />
-    <meta name="og:title" property="og:title" content="Symetryx Corporation" />
+    <meta name="og:title" property="og:title" content="Home" />
     <meta dname="og:site_name" property="og:site_name" content="Symetryx" />
     <meta
       name="og:description"
       property="og:description"
-      content="Symetryx is a privately venture capital corporation located in Toronto, Canada"
+      content="Symetryx is a privately owned venture capital corporation located in Toronto, Canada"
     />
     <link rel="icon" href="symetryx-logo.webp" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Symetryx</title>
+
+    <!-- schema markup -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [{
+          "@type": "Organization",
+          "@id": "https://symetryx.com/#organization",
+          "name": "Symetryx Corporation",
+          "url": "https://symetryx.com/",
+          "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+          "email": "info@symetryx.com",
+          "areaServed": "worldwide",
+          "logo": {
+            "@id": "https://symetryx.com/#logo"
+          },
+          "image": {
+            "@id": "https://symetryx.com/#logo"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "@id": "https://symetryx.com/#address",
+            "streetAddress": "2828 Bathurst Street, Suite 400",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "postalCode": "M6B 3A3",
+            "addressCountry": "CA"
+          },
+          "location": {
+            "@id": "https://symetryx.com/#address"
+          },
+          "brand": {
+            "@type": "Brand",
+            "name": "Symetryx Corporation",
+            "url": "https://symetryx.com/",
+            "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+            "logo": {
+              "@id": "https://symetryx.com/#logo"
+            }
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "name": "Symetryx Corporation",
+            "url": "https://symetryx.com/",
+            "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+            "image": {
+              "@id": "https://symetryx.com/#logo"
+            },
+            "areaServed": "worldwide",
+            "availableLanguage": "en",
+            "contactOption": "TollFree",
+            "contactType": "customer service",
+            "email": "info@symetryx.com"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://symetryx.com/#webpage"
+          }
+        }, {
+          "@type": "WebPage",
+          "@id": "https://symetryx.com/#webpage",
+          "url": "https://symetryx.com/",
+          "name": "Symetryx Corporation",
+          "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+          "headline": "Symetryx Corporation",
+          "inLanguage": "en",
+          "primaryImageOfPage": {
+            "@id": "https://symetryx.com/#logo"
+          },
+          "image": {
+            "@id": "https://symetryx.com/#logo"
+          },
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": "https://symetryx.com/"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Symetryx Corporation",
+              "item": "https://symetryx.com/"
+            }
+          },
+          "mainEntity": {
+            "@context": "https://schema.org/",
+            "@type": "ItemList",
+            "@id": "https://symetryx.com/#portfolio",
+            "name": "Symetryx Corporation",
+            "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+            "itemListElement": [{
+              "@type": "Organization",
+              "name": "NOVETO",
+              "url": "https://www.noveto.com/",
+              "description": "Noveto revolutionizes audio with headphone-free immersive experiences. Disrupting advertising with personalized audio messaging, we aim to redefine smart living through an intuitive interface and cutting-edge audio tech. Our innovative technology beams sound directly outside your ears for a unique personal audio encounter, changing how we interact with smart devices globally.",
+              "logo": "https://symetryx.com/static/media/noveto.295b9986720ede67773c.webp",
+              "image": "https://symetryx.com/static/media/noveto.295b9986720ede67773c.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "MONETA VENTURE CAPITAL",
+              "url": "https://www.monetavc.com/",
+              "description": "Dedicated to advancing global fintech, Moneta VC's mission is to invest in groundbreaking solutions. We seek startups at the forefront of the financial services' digital evolution. Key areas of interest include Credit Risk, Trade and Investment, Anti-Fraud, Actuary, and Blockchain.",
+              "logo": "https://symetryx.com/static/media/moneta.e0ab50729738cf9b9e0f.webp",
+              "image": "https://symetryx.com/static/media/moneta.e0ab50729738cf9b9e0f.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "NOBUL",
+              "url": "https://nobul.com/",
+              "description": "Nobul offers a transparent real estate marketplace, championing informed decisions for both buyers and sellers. Prioritizing honesty, trust, and simplicity, we guide users through the real estate process, ensuring value and confidence every step of the way.",
+              "logo": "https://symetryx.com/static/media/nobul.e5ee1562d3d1400d8ff4.webp",
+              "image": "https://symetryx.com/static/media/nobul.e5ee1562d3d1400d8ff4.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "AWZ VENTURES",
+              "url": "https://www.awzventures.com/",
+              "description": "AWZ Ventures is a Toronto-based investment firm specializing in homeland and cybersecurity solutions. Bridging Israeli innovation with North American markets, they focus on addressing critical security challenges across industries.",
+              "logo": "https://symetryx.com/static/media/awz-ventures.278551cb3c8c0c253203.webp",
+              "image": "https://symetryx.com/static/media/awz-ventures.278551cb3c8c0c253203.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "AGRITASK",
+              "url": "https://start.agritask.com/",
+              "description": "Agritask is a leading Agronomic Intelligence platform connecting Food & Beverage enterprises with growers, ensuring quality, yield, and sustainability. Through machine learning and analytics, it transforms agronomic data into actionable insights, promoting sustainable supply chain operations and effective risk management.",
+              "logo": "https://symetryx.com/static/media/agritask.72c929eb0a98e9c50510.webp",
+              "image": "https://symetryx.com/static/media/agritask.72c929eb0a98e9c50510.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "PAPR NEWS",
+              "url": "https://www.papr.com/",
+              "description": "PAPR, an AI-driven news app, curates global headlines from premier sources like BBC, CNN, and The Guardian. Leveraging advanced machine learning, PAPR tailors your news feed, ensuring you receive stories that resonate with your interests. Stay informed with PAPR, where the world's news meets personal relevance.",
+              "logo": "https://symetryx.com/static/media/papr-news.e5229a9180733f4b560e.webp",
+              "image": "https://symetryx.com/static/media/papr-news.e5229a9180733f4b560e.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "LANDMARK",
+              "url": "https://www.landmarkcre.ca/",
+              "description": "Landmark, a pioneering commercial real estate advisory firm, redefines the industry through its relationship-driven approach. Exclusively representing tenants, we eliminate conflicts of interest, ensuring landlords uphold lease obligations. Our commission-driven revenue fuels investment in a diverse team of experts, enhancing value for space occupiers. At Landmark, we don't just advise; we partner. Partner smarter with Landmark.",
+              "logo": "https://symetryx.com/static/media/landmark.77b350f9288284f668db.webp",
+              "image": "https://symetryx.com/static/media/landmark.77b350f9288284f668db.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "CASTLE LANTERRA PROPERTIES",
+              "url": "https://www.castlelanterra.com/",
+              "description": "Castle Lanterra, a trusted fiduciary, investor, and owner, strategically acquires properties in promising markets with strong fundamentals. Their consistent results underscore their leading industry position, emphasizing their commitment to growth and excellence.",
+              "logo": "https://symetryx.com/static/media/lanterra.142f809f85329e27692e.webp",
+              "image": "https://symetryx.com/static/media/lanterra.142f809f85329e27692e.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "HVR",
+              "url": "https://hvr.world/",
+              "description": "Hvr revolutionizes web browsing by integrating social features across all web pages. More than a browser, Hvr offers a dynamic conversation layer, making web exploration lively and engaging. Users can effortlessly follow sites and conversations, organize information with hashtags, and share insights with friends. With Hvr, navigating the vast web becomes intuitive and enriched.",
+              "logo": "https://symetryx.com/static/media/hvr.6e2126a22e071d6c2277.webp",
+              "image": "https://symetryx.com/static/media/hvr.6e2126a22e071d6c2277.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "CHARGERQUEST",
+              "url": "https://chargerquest.com/",
+              "description": "ChargerQuest is Canada's premier electric vehicle charging network, boasting advanced smart stations on partner properties. Dedicated to bolstering Canadian businesses and aiding EV drivers, they establish vital charging hubs at high-traffic locales. With strategic partnerships and revenue programs, ChargerQuest aims to pioneer Canada’s vast EV charging infrastructure.",
+              "logo": "https://symetryx.com/static/media/chargerquest.8814634ca19dc60b5daf.webp",
+              "image": "https://symetryx.com/static/media/chargerquest.8814634ca19dc60b5daf.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "DEALMAKER",
+              "url": "https://www.dealmaker.tech/",
+              "description": "Dealmaker offers a comprehensive platform for all stages of capital raising, from seed to IPO. Catering to various raise types, including Reg A, Reg CF, and more, our automated solutions streamline filings, investor relations, and digital payments. With real-time data and seamless integrations, Dealmaker optimizes investor experiences and simplifies the capital raise journey.",
+              "logo": "https://symetryx.com/static/media/dealmaker.83f7fb02b5307b9ce8cb.webp",
+              "image": "https://symetryx.com/static/media/dealmaker.83f7fb02b5307b9ce8cb.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "FLORAWORKS",
+              "url": "https://flora-works.com/",
+              "description": "FloraWorks, rooted in cannabinoid science, collaborates in product enhancement and research advancement. Offering tailored solutions and pioneering domain research, partnering with us provides access to cutting-edge technology and industry expertise. Our success mirrors our partners', ensuring consistent support throughout development.",
+              "logo": "https://symetryx.com/static/media/floraworks.744a3e9acf79e19839cf.webp",
+              "image": "https://symetryx.com/static/media/floraworks.744a3e9acf79e19839cf.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "MOLECULE",
+              "url": "https://molecule.ca/",
+              "description": "Molecule partners with clients to produce cannabis-infused beverages and edibles. Offering infrastructure, expertise, technology, and licensing, we empower craft producers to craft quality consumable cannabis products.",
+              "logo": "https://symetryx.com/static/media/molecule.2b098a926a0e8d1e91b5.webp",
+              "image": "https://symetryx.com/static/media/molecule.2b098a926a0e8d1e91b5.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "TIPRANKS",
+              "url": "https://www.tipranks.com/",
+              "description": "TipRanks, an acclaimed platform, ranks financial experts and bloggers using their performance and prediction accuracy. With advanced Natural Language Processing algorithms, their Financial Accountability Engine™ evaluates forecasts from over 7,000 sources, guiding investors in discerning trustworthy advice for investment decisions.",
+              "logo": "https://symetryx.com/static/media/tipranks.a5801744fa2ec0dd96df.webp",
+              "image": "https://symetryx.com/static/media/tipranks.a5801744fa2ec0dd96df.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "TZP GROUP",
+              "url": "https://www.tzpgroup.com/",
+              "description": "Founded in 2007, TZP Group is a private equity firm targeting lower-middle market sectors in the US and Canada, with a managed portfolio of $2.0 billion. TZP partners with businesses desiring strategic collaborations while maintaining ownership. Their tailored investment strategies, backed by a dedicated Portfolio Operations Group, always adhere to their Core Principles and Values.",
+              "logo": "https://symetryx.com/static/media/tzp.40295597b05c9c53c3b5.webp",
+              "image": "https://symetryx.com/static/media/tzp.40295597b05c9c53c3b5.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "POWERS PROPERTY GROUP",
+              "url": "https://www.powersproperty.com/",
+              "description": "Powers Property Group, a dynamic retail commercial real estate conglomerate, offers holistic advisory, asset management, consulting, development, and leasing solutions. As seasoned owners, developers, and managers, we possess the acumen to amplify property value and optimize returns for our clients, both short-term and long-term. Trust in Powers for unmatched real estate expertise.",
+              "logo": "https://symetryx.com/static/media/powers-real-estate.f1e522cdde52e934c9a3.webp",
+              "image": "https://symetryx.com/static/media/powers-real-estate.f1e522cdde52e934c9a3.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "LINDVEST HOMES",
+              "url": "https://www.lindvest.com/",
+              "description": "With a legacy dating back to 1952 under the H&R banner, Lindvest has transformed the landscape of land development. Since 2011, under the Lindvest name, our seasoned team has been crafting distinguished communities across Ontario. Renowned for meticulous planning, modern urban design, and superior construction, Lindvest continues to shape the future of premium home-building.",
+              "logo": "https://symetryx.com/static/media/lindvest.f54542d2a0050f90b928.webp",
+              "image": "https://symetryx.com/static/media/lindvest.f54542d2a0050f90b928.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "PICKERING TOWN CENTRE",
+              "url": "https://pickeringtowncentre.com/",
+              "description": "Pickering Town Centre is a large regional shopping mall located in Pickering, Ontario, Canada. Opened in 1972 as Pickering Sheridan Mall, the mall has over 150 stores.",
+              "logo": "https://symetryx.com/static/media/pickering-town-center.ee29cbe6d8a15a430b21.webp",
+              "image": "https://symetryx.com/static/media/pickering-town-center.ee29cbe6d8a15a430b21.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ALPHA LITHIUM",
+              "url": "https://alphalithium.com/",
+              "description": "Alpha Lithium is a pioneering force in the Argentine 'Lithium Triangle', assembling untapped land and unlocking potential reserves. With significant discoveries at Tolillar Salar and a promising presence in Hombre Muerto salar, they stand at the forefront of the next big lithium opportunity in a globally revered region.",
+              "logo": "https://symetryx.com/static/media/alpha-lithium.81f888686ce1b5f8e591.webp",
+              "image": "https://symetryx.com/static/media/alpha-lithium.81f888686ce1b5f8e591.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ETHER CAPITAL",
+              "url": "https://ethcap.co/",
+              "description": "Ether Capital, founded in 2018 by a blend of crypto experts, finance pros, and venture capitalists, serves as a leading gateway to Ethereum for capital markets. Witnessing Ethereum's ascent as a multi-billion-dollar powerhouse and its evolution with Ethereum 2.0's 'Proof of Stake', Ether Capital took a pioneering step in December 2021. They became the first public firm globally to substantially stake Ether, capitalizing on lucrative yields while ensuring about 95% of their portfolio aids in fortifying the Ethereum protocol.",
+              "logo": "https://symetryx.com/static/media/ether-capital.161780f07376741447a6.webp",
+              "image": "https://symetryx.com/static/media/ether-capital.161780f07376741447a6.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "LIGHTHOUSE CREDIT UNION",
+              "url": "https://lighthousecu.ca/",
+              "description": "Lighthouse, inspired by the distinct financial needs of the Jewish community, is a committed credit union serving the Greater Toronto Area. Beyond banking, they address unique community aspects like private school tuition and Jewish charity donations. Guided by Jewish values, they prioritize family, health, tradition, and philanthropy, donating 10% of profits back to the community. Lighthouse stands as a beacon of trust, transparency, and unwavering community support.",
+              "logo": "https://symetryx.com/static/media/lighthouse-credit-union.2e48053ce147985dd40f.webp",
+              "image": "https://symetryx.com/static/media/lighthouse-credit-union.2e48053ce147985dd40f.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "NOVSN",
+              "url": "https://novsn.com/",
+              "description": "Founded in 1989 as part of a global bank group, Novation Solutions Limited (NOVSN) has emerged as a top-tier outsourcing service provider, specializing in document management, processing, and advanced print solutions. Joining ADERA Global Companies in 2015 and expanding into China in 2002, NOVSN has consistently innovated, now being recognized for elite security document printing.",
+              "logo": "https://symetryx.com/static/media/novsn.dfde06970c090a937195.webp",
+              "image": "https://symetryx.com/static/media/novsn.dfde06970c090a937195.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "VENTERRA REALTY",
+              "url": "https://venterra.com/",
+              "description": "Venterra, a leader in multi-family residential ventures in the southern U.S., manages assets worth $4.8 billion. Based in Houston and Toronto, they oversee 80 properties, emphasizing excellence and guided by core values. With a commitment to residents and employees alike, Venterra stands as an industry trailblazer.",
+              "logo": "https://symetryx.com/static/media/venterra-realty.7543b59eb9fdac165d83.webp",
+              "image": "https://symetryx.com/static/media/venterra-realty.7543b59eb9fdac165d83.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "OSPREY MINERALS",
+              "url": "https://ospreyminerals.com.au/",
+              "description": "Osprey Minerals Limited, an Australian firm, holds a promising exploration portfolio in Western Australia's East Kimberley region. Their goal is to boost the region's exploration potential and support a clean energy future.",
+              "logo": "https://symetryx.com/static/media/osprey-minerals.deee1c33d283adacc62a.webp",
+              "image": "https://symetryx.com/static/media/osprey-minerals.deee1c33d283adacc62a.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "LEAF",
+              "url": "https://www.getleaf.co/",
+              "description": "LEAF, introduced in 2015, is an automated system resembling a refrigerator, designed primarily for growing marijuana at home. Controlled via a smartphone app, it requires minimal maintenance: just plant seeds, change water weekly, and periodically replace nutrient cartridges and air filters. Ensuring pesticide-free growth, deliveries began in September 2017.",
+              "logo": "https://symetryx.com/static/media/leaf.e72acd06def864dbf0be.webp",
+              "image": "https://symetryx.com/static/media/leaf.e72acd06def864dbf0be.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "GOLD HART MINING CORPORATION",
+              "url": "https://www.linkedin.com/company/gold-hart-mining-corporation/",
+              "description": "Gold Hart Mining Corp specializes in gold, silver, and copper assets, positioned near major players. Steered by a former director of a national geological organization, we combine prime location with expert leadership.",
+              "logo": "https://symetryx.com/static/media/gold-hart.f2f017fccb2f73a3df8a.webp",
+              "image": "https://symetryx.com/static/media/gold-hart.f2f017fccb2f73a3df8a.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "AMERICAN LANDMARK",
+              "url": "https://www.americanlandmark.com/",
+              "description": "American Landmark Properties is a real estate investment group with a 30-year track record of delivering consistently strong returns to its investors. The company’s acquisition philosophy is to seek and acquire value-add and opportunistic mid-cap office, industrial and multifamily properties in the Midwest and East Coast. Our skills and expertise include syndication, financing, leasing, sales and marketing, repositioning, renovation property/asset management and disposition.",
+              "logo": "https://symetryx.com/static/media/american-landmark.8ffb4e0b6c2c79bf78ca.webp",
+              "image": "https://symetryx.com/static/media/american-landmark.8ffb4e0b6c2c79bf78ca.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "NGEN",
+              "url": "https://www.ngen.ca/",
+              "description": "NGen, Canada's leader in the Global Innovation Cluster for Advanced Manufacturing, is a non-profit dedicated to advancing digital transformation in manufacturing. Backed by Canada's Global Innovation Clusters Initiative, NGen champions superior manufacturing capabilities, technological advancements, and operational excellence. Their projects focus on fortifying supply chains, environmental protection, healthcare enhancement, and nationwide technology adoption.",
+              "logo": "https://symetryx.com/static/media/ngen.50666800bb622de77c07.webp",
+              "image": "https://symetryx.com/static/media/ngen.50666800bb622de77c07.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ROUND 13 CAPITAL",
+              "url": "https://round13.com/",
+              "description": "Round 13 principally focuses on growth-stage venture capital and later-stage tech-enabled services, while selectively evaluating seed stage opportunities.",
+              "logo": "https://symetryx.com/static/media/round-13-capital.a5f69f8990dbd6f48236.webp",
+              "image": "https://symetryx.com/static/media/round-13-capital.a5f69f8990dbd6f48236.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "UNIVERSAL PROPTECH",
+              "url": "https://universalproptech.com/",
+              "description": "Universal PropTech Inc., is a Canadian sustainable infrastructure solution provider with a focus on renewable energy and technology. Through its subsidiary, VCI Controls Inc., they specialize in intelligent building technology, integrating advanced communication systems, digital controls, mechanical services, and energy efficiency solutions.",
+              "logo": "https://symetryx.com/static/media/universal-proptech.62fa1c9aeb1859c2c5a0.webp",
+              "image": "https://symetryx.com/static/media/universal-proptech.62fa1c9aeb1859c2c5a0.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ADEN SENIOR LIVING",
+              "url": "https://www.adenseniorliving.com/",
+              "description": "Aden Senior Living offers premier club-level, assisted, and memory care accommodations. Merging luxury amenities with personalized wellness programs, residents enjoy spacious apartments, unparalleled hospitality, and a perfect blend of independence and care. Surrounded by nature yet close to urban conveniences, it's an idyllic retirement haven.",
+              "logo": "https://symetryx.com/static/media/aden-senior-living.9b134cf35db04c8e7fde.webp",
+              "image": "https://symetryx.com/static/media/aden-senior-living.9b134cf35db04c8e7fde.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ATIDOT",
+              "url": "https://www.atidot.com/",
+              "description": "Atidot is an AI-driven platform empowering life insurers with predictive analytics. It processes unstructured data from legacy systems, integrates external sources, and offers insights for proactive risk management, optimizing insurance outcomes.",
+              "logo": "https://symetryx.com/static/media/atidot.44c33b5035c2e73ea881.webp",
+              "image": "https://symetryx.com/static/media/atidot.44c33b5035c2e73ea881.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "BINAH AI",
+              "url": "https://www.binah.ai/",
+              "description": "Binah.ai offers an AI-driven Health Data Platform, integrating with apps to measure health parameters via video. Using everyday devices like smartphones, users gain insights into their health by simply facing the camera, receiving a wellness score within a minute.",
+              "logo": "https://symetryx.com/static/media/binah.b0593bf931a598d2c0b8.webp",
+              "image": "https://symetryx.com/static/media/binah.b0593bf931a598d2c0b8.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "CBA PHARMA",
+              "url": "https://www.cbapharma.com/",
+              "description": "CBA Pharma, Inc. specializes in the manufacture and distribution of CBT-1®, targeting Multiple Drug Resistance (MDR) in cancer treatments. MDR challenges effective chemotherapy, leading to treatment failures. Committed to enhancing life quality for those battling life-threatening diseases, CBA Pharma operates under the principle 'Many Minds, One Heart'®, embodying a decade of pioneering research and collective vision.",
+              "logo": "https://symetryx.com/static/media/cba-pharma.2e6e0bea4e74b4382b4b.webp",
+              "image": "https://symetryx.com/static/media/cba-pharma.2e6e0bea4e74b4382b4b.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "ESPRESA",
+              "url": "https://www.espresa.com/",
+              "description": "Espresa is an all-encompassing platform amplifying HR and People Teams. Streamlining virtual meetings, multi-track events, and gym schedules, it offers real-time tracking of attendance and finances. Espresa's Culture Benefits® Platform enhances employee engagement, whether remote or on-site, fostering a holistic workplace centered on wellbeing, community, and recognition.",
+              "logo": "https://symetryx.com/static/media/expresa.8aba9605b3b27890bf53.webp",
+              "image": "https://symetryx.com/static/media/expresa.8aba9605b3b27890bf53.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "GAVITI",
+              "url": "https://gaviti.com/",
+              "description": "Gaviti, tailored for collection teams, standardizes data from diverse ERP applications, streamlining collection analysis. This cloud-based, ERP-agnostic platform boosts collections with payment forecasts, risk scoring, and actionable insights. Offering a unified workspace for stakeholders, Gaviti empowers SMEs to refine their collection processes.",
+              "logo": "https://symetryx.com/static/media/gaviti.eedd11fb500a44fb74d6.webp",
+              "image": "https://symetryx.com/static/media/gaviti.eedd11fb500a44fb74d6.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "JASSBY",
+              "url": "https://jassby.com/",
+              "description": "Jassby is a smart family finance app that leads kids and teenagers to financial literacy. With Jassby, kids can earn allowances in the app, then use their money online or in person with their Jassby debit card. Parents can set spending limits for the card, as well as assign chores and pay allowances.",
+              "logo": "https://symetryx.com/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
+              "image": "https://symetryx.com/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "NEURA",
+              "url": "https://otonomo.io/neura/",
+              "description": "Neura is an AI and ML-based customer engagement platform that empowers mobile brands to adapt to customers’ preferences and needs in real-time. Using Neura’s ability to predict users’ actions in mobile apps, brands can increase engagement, conversion, and retention rates by making the right offer, to the right customer, at the right time.",
+              "logo": "https://symetryx.com/static/media/neura.c5e1afb34a177eb72135.webp",
+              "image": "https://symetryx.com/static/media/neura.c5e1afb34a177eb72135.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "OCTOPAI",
+              "url": "https://www.octopai.com/",
+              "description": "Octopai offers a centralized platform that efficiently extracts and analyzes metadata across your data environment. With a swift and secure process, users gain automatic access to data lineage, data discovery, and a comprehensive data catalog.",
+              "logo": "https://symetryx.com/static/media/octopai.802c7eef983823c19e2c.webp",
+              "image": "https://symetryx.com/static/media/octopai.802c7eef983823c19e2c.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "PANORAYS",
+              "url": "http://panorays.com/",
+              "description": "Panorays offers a SaaS-based platform that streamlines third-party security risk management. It automates and scales vendor security assessments, facilitating swift risk mitigation. With Panorays, companies can ensure supplier security, achieve regulatory compliance like GDPR and NYDFS, reduce breaches, and bolster overall security efficiency.",
+              "logo": "https://symetryx.com/static/media/panorays.98959078f0a3fcdfaec5.webp",
+              "image": "https://symetryx.com/static/media/panorays.98959078f0a3fcdfaec5.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "REWIRE",
+              "url": "https://www.rewire.co.il/",
+              "description": "Rewire champions international workers' financial management, fostering a brighter future for them and their families. Utilizing innovative tech, Rewire introduces a pioneering financial platform designed for migrants' cross-border requirements, enabling them to handle finances across multiple countries seamlessly.",
+              "logo": "https://symetryx.com/static/media/rewire.edc862974e57e3a5822f.webp",
+              "image": "https://symetryx.com/static/media/rewire.edc862974e57e3a5822f.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "SPROUTT",
+              "url": "https://sproutt.com/",
+              "description": "Sproutt rewards health-conscious individuals with improved life insurance terms using AI and unique data. With deep learning, we categorize customers into “persona” groups, ensuring a tailored and customer-centric experience throughout their insurance journey.",
+              "logo": "https://symetryx.com/static/media/sproutt.9f8f675ed8af80d52ed5.webp",
+              "image": "https://symetryx.com/static/media/sproutt.9f8f675ed8af80d52ed5.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "TIIDAL",
+              "url": "https://tiidal.gg/",
+              "description": "Tiidal is a dynamic esports and gaming platform, owning synergistic businesses like Sportsflare and Lazarus Esports within the gaming realm. Committed to advancing competitive gaming and game-based entertainment, Tiidal emphasizes media and entertainment, believing engagement is paramount. Through media and tech, they aim to amplify fan interaction and elevate the esports experience tenfold.",
+              "logo": "https://symetryx.com/static/media/tiidal.9d50b2e81cd74e32d7e2.webp",
+              "image": "https://symetryx.com/static/media/tiidal.9d50b2e81cd74e32d7e2.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }, {
+              "@type": "Organization",
+              "name": "SPROTT MONEY",
+              "url": "https://www.sprottmoney.com/",
+              "description": "Since 2008, Sprott Money has been a trusted leader in precious metals, offering secure, competitively priced investment-grade bullion. Catering to individual, corporate, and institutional buyers, we emphasize guidance, education, and exceptional service. Specializing in gold, silver, and platinum products, we guarantee quality, competitive prices, and discreet, timely delivery for portfolios of all sizes.",
+              "logo": "https://symetryx.com/static/media/sprott-money.71b6218fb023340c89f2.webp",
+              "image": "https://symetryx.com/static/media/sprott-money.71b6218fb023340c89f2.webp",
+              "subjectOf": {
+                "@id": "https://symetryx.com/#website"
+              }
+            }]
+          },
+          "mentions": {
+            "@id": "https://symetryx.com/#portfolio"
+          },
+          "isPartOf": {
+            "@id": "https://symetryx.com/#website"
+          }
+        }, {
+          "@type": "WebSite",
+          "@id": "https://symetryx.com/#website",
+          "url": "https://symetryx.com/",
+          "name": "Symetryx Corporation",
+          "description": "Symetryx is a privately owned venture capital corporation located in Toronto, Canada",
+          "inLanguage": "en",
+          "image": {
+            "@id": "https://symetryx.com/#logo"
+          },
+          "mentions": {
+            "@id": "https://symetryx.com/#portfolio"
+          }
+        }, {
+          "@type": "ImageObject",
+          "@id": "https://symetryx.com/#logo",
+          "url": "https://symetryx.com/static/media/symetryx-logo.0acd36bbea8d1752a6b0.webp",
+          "contentUrl": "https://symetryx.com/static/media/symetryx-logo.0acd36bbea8d1752a6b0.webp",
+          "width": 215,
+          "height": 216,
+          "caption": "Symetryx Corporation"
+        }]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -34,7 +600,7 @@
   ></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init("iwUP8eH1NlcSvoxkb");
+      emailjs.init("TeuFVn76bYxVYLyyd");
     })();
   </script>
 </html>

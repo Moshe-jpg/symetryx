@@ -75,7 +75,7 @@ const logos = [
     title: "AWZ Ventures",
     desc: "AWZ Ventures is a Toronto-based investment firm specializing in homeland and cybersecurity solutions. Bridging Israeli innovation with North American markets, they focus on addressing critical security challenges across industries.",
     imageSrc: logo16,
-    link: "https://www.atidot.com/",
+    link: "https://www.awzventures.com/",
   },
   {
     name: "agritask",
@@ -99,7 +99,7 @@ const logos = [
     title: "LandMark",
     desc: "Landmark, a pioneering commercial real estate advisory firm, redefines the industry through its relationship-driven approach. Exclusively representing tenants, we eliminate conflicts of interest, ensuring landlords uphold lease obligations. Our commission-driven revenue fuels investment in a diverse team of experts, enhancing value for space occupiers. At Landmark, we don't just advise; we partner. Partner smarter with Landmark.",
     imageSrc: logo14,
-    link: "",
+    link: "https://www.landmarkcre.ca/",
   },
   {
     name: "lanterra",

@@ -16,16 +16,28 @@ const EmailForm = () => {
     // send the form with the updated form.current
     emailjs
       .sendForm(
-        "service_d20m0l2",
+        "service_gzh74ax",
         "contact_form",
         form.current,
-        "iwUP8eH1NlcSvoxkb"
+        "TeuFVn76bYxVYLyyd"
       )
       .then(
         (result) => {
           console.log(result.text);
           let inputs = document.querySelectorAll("input");
           inputs.forEach((input) => (input.value = ""));
+          let btn = document.querySelector(".inputBoxBtn");
+          btn.style.background = "green";
+          btn.style.color = "var(--white)"
+          btn.style.pointerEvents = "none";
+          btn.innerHTML = "Sent";
+
+          setTimeout(() => {
+            btn.style.background = "var(--white)";
+            btn.style.color = "var(--amex-blue)";
+            btn.style.pointerEvents = "auto";
+            btn.innerHTML = "Submit";
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
@@ -69,7 +81,7 @@ const EmailForm = () => {
             name="message"
             required="required"
             className="inputBox-message-input"
-            placeholder="* I'm Reaching Out Because..."
+            placeholder="* Message"
           />
         </div>
         <div className="spacer"></div>

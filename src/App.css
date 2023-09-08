@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 :root {
   --white: #ffffff;
   --black: #000000;
   --light-transparent: rgba(255, 255, 255, 0.75);
   --dark-transparent: rgba(255, 255, 255, 0.3);
-  --amex-blue: #279eff;
+  --amex-blue: #54595d;
 }
 
 * {
@@ -15,7 +14,7 @@
   letter-spacing: 1px;
   overflow-x: hidden;
   line-height: 1.5;
-  font-family: "Roboto Slab", serif;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 
@@ -167,7 +166,7 @@ a {
   opacity: 0;
 }
 
-.logo-container .card .circle .logo[alt="papr news"], .logo-container .card .circle .logo[alt="cba-pharma"], .logo-container .card .circle .logo[alt="Osprey Minerals"]  {
+.logo-container .card .circle .logo[alt="papr news"], .logo-container .card .circle .logo[alt="cba-pharma"], .logo-container .card .circle .logo[alt="Osprey Minerals"],.logo-container .card .circle .logo[alt="landmark"], .logo-container .card .circle .logo[alt="lanterra"] {
   width: 100%;
 }
 
@@ -218,7 +217,7 @@ a {
 
 .content a {
   color: var(--white);
-  background: #002ca580;
+  background: var(--amex-blue);
   padding: 5px 10px;
   border-radius: 15px;
   margin: 10px 0;
@@ -298,6 +297,7 @@ a {
 }
 
 .contact-container .address .location a {
+  
   transition: background-color 0.3s ease-in-out;
   background-color: transparent;
 }
@@ -337,9 +337,11 @@ a {
 }
 
 .contact-container .hyperlink-container a span {
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: font-size 0.3s; /* Smooth transition */
   margin: 0;
+  color: var(--white);
+  text-decoration: underline;
 }
 
 .contact-container a {
@@ -387,6 +389,7 @@ form .inputBox input {
   font-size: 18px;
   overflow: hidden;
   color: var(--white);
+  cursor: pointer;
 }
 
 form .inputBox input::placeholder {
@@ -486,6 +489,12 @@ form .inputBoxBtn:hover {
   transform: translateX(100%);
 }
 
+@media screen and (min-width: 1240px) {
+  .contact-container .address {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .homepage-container h1 {
     margin: 0 0 10px;
@@ -520,10 +529,6 @@ form .inputBoxBtn:hover {
   }
 
   /* footer */
-
-  .contact-container .address {
-    text-align: center;
-  }
 
   .contact-container .address .location {
     margin: 10px auto;
