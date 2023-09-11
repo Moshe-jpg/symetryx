@@ -11,8 +11,8 @@ const RunContactAnimation = () => {
           scrollTrigger: {
             trigger: ".footer",
             start: "top 80%",
-            end: "top 40%",
-            scrub: 1,
+            duration: 2.5,
+            // scrub: 1,
           },
         });
       
@@ -23,8 +23,8 @@ const RunContactAnimation = () => {
           scrollTrigger: {
             trigger: ".footer",
             start: "top 80%",
-            end: "top 40%",
-            scrub: 1,
+            duration: 2.5,
+            // scrub: 1,
           },
         });
       };
