@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1abcd96d.css",
-    "main.js": "/static/js/main.b6d7b020.js",
+    "main.css": "/static/css/main.fa2bab00.css",
+    "main.js": "/static/js/main.1e9a637c.js",
     "static/js/787.10167d57.chunk.js": "/static/js/787.10167d57.chunk.js",
     "static/media/noveto.webp": "/static/media/noveto.295b9986720ede67773c.webp",
     "static/media/sprott-money.webp": "/static/media/sprott-money.71b6218fb023340c89f2.webp",
@@ -51,12 +51,12 @@
     "static/media/moneta.webp": "/static/media/moneta.e0ab50729738cf9b9e0f.webp",
     "static/media/jassby.webp": "/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
     "static/media/leaf.webp": "/static/media/leaf.e72acd06def864dbf0be.webp",
-    "main.1abcd96d.css.map": "/static/css/main.1abcd96d.css.map",
-    "main.b6d7b020.js.map": "/static/js/main.b6d7b020.js.map",
+    "main.fa2bab00.css.map": "/static/css/main.fa2bab00.css.map",
+    "main.1e9a637c.js.map": "/static/js/main.1e9a637c.js.map",
     "787.10167d57.chunk.js.map": "/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1abcd96d.css",
-    "static/js/main.b6d7b020.js"
+    "static/css/main.fa2bab00.css",
+    "static/js/main.1e9a637c.js"
   ]
 }
