@@ -335,6 +335,7 @@ a {
   width: 25px;
   transition: width 0.3s;
   margin-right: 15px;
+  filter: invert(1);
 }
 
 .contact-container .hyperlink-container a span {
