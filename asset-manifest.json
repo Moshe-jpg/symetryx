@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.b52e1c0c.css",
-    "main.js": "/static/js/main.fcf33686.js",
+    "main.css": "/static/css/main.1a059fbd.css",
+    "main.js": "/static/js/main.606ee50f.js",
     "static/js/787.10167d57.chunk.js": "/static/js/787.10167d57.chunk.js",
     "static/media/noveto.webp": "/static/media/noveto.295b9986720ede67773c.webp",
     "static/media/expresa.webp": "/static/media/expresa.8aba9605b3b27890bf53.webp",
+    "static/media/symetryx-pdf.docx": "/static/media/symetryx-pdf.0e3421f3729cf29af445.docx",
     "static/media/binah.webp": "/static/media/binah.b0593bf931a598d2c0b8.webp",
     "index.html": "/index.html",
     "static/media/awz-ventures.webp": "/static/media/awz-ventures.278551cb3c8c0c253203.webp",
@@ -51,12 +52,12 @@
     "static/media/atidot.webp": "/static/media/atidot.174cc3c644a4a93d4005.webp",
     "static/media/jassby.webp": "/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
     "static/media/leaf.webp": "/static/media/leaf.e72acd06def864dbf0be.webp",
-    "main.b52e1c0c.css.map": "/static/css/main.b52e1c0c.css.map",
-    "main.fcf33686.js.map": "/static/js/main.fcf33686.js.map",
+    "main.1a059fbd.css.map": "/static/css/main.1a059fbd.css.map",
+    "main.606ee50f.js.map": "/static/js/main.606ee50f.js.map",
     "787.10167d57.chunk.js.map": "/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b52e1c0c.css",
-    "static/js/main.fcf33686.js"
+    "static/css/main.1a059fbd.css",
+    "static/js/main.606ee50f.js"
   ]
 }
