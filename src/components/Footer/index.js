@@ -13,6 +13,8 @@ const Footer = () => {
 
   return (
     <footer className="footer" ref={ContactRef}>
+      <div className="bubble one"></div>
+      <div className="bubble two"></div>
       <div className="contact-layout-container">
         <div className="contact-container">
           <address className="address">

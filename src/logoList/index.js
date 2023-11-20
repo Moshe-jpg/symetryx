@@ -21,7 +21,6 @@ import logo24 from "../assets/octopai.webp";
 import logo25 from "../assets/panorays.webp";
 import logo26 from "../assets/papr-news.webp";
 import logo27 from "../assets/rewire.webp";
-// import logo28 from "../assets/rocketdollar.webp";
 import logo29 from "../assets/sproutt.webp";
 import logo30 from "../assets/tiidal.webp";
 import logo31 from "../assets/tipranks.webp";
@@ -373,14 +372,6 @@ const logos = [
     imageSrc: logo27,
     link: "https://www.rewire.co.il/",
   },
-  // {
-  //   name: "rocketdollar",
-  //   alt: "rocketdollar",
-  //   title: "RocketDollar",
-  //   desc: "Rocket Dollar empowers individuals to diversify their IRA/401(k) investments into alternative assets like real estate, crypto, and startups while retaining tax advantages. Serving customers nationwide, their platform simplifies and secures the process of venturing beyond traditional investments.",
-  //   imageSrc: logo28,
-  //   link: "https://www.rocketdollar.com/",
-  // },
   {
     name: "sproutt",
     alt: "sproutt",
@@ -405,7 +396,7 @@ const logos = [
     imageSrc: logo33,
     link: "https://www.sprottmoney.com/",
   },
-];
+].sort((a, b) => a.name.localeCompare(b.name));
 
 const LogoList = () => {
   return (

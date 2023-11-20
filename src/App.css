@@ -1,10 +1,9 @@
-
 :root {
   --white: #ffffff;
   --black: #000000;
   --light-transparent: rgba(255, 255, 255, 0.75);
   --dark-transparent: rgba(255, 255, 255, 0.3);
-  --amex-blue: #54595d;
+  --amex-blue: #006cb9;
 }
 
 * {
@@ -35,16 +34,27 @@ a {
   cursor: pointer;
 }
 
+/* temporary banner */
+
+.banner {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: #eee; */
+}
+
+.banner a {
+  text-decoration: underline;
+}
+
 /* navbar */
 
 .navbar {
   width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  background: var(--amex-blue);
+  background: linear-gradient(15deg, #303c6d, var(--amex-blue) 54%, #303c6d);
 }
 
 @keyframes rotateLogo {
@@ -56,10 +66,29 @@ a {
   }
 }
 
+.navbar a {
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
 .navbar img {
   width: 7.5rem;
-  margin: 25px 0 0;
+  margin: 0 0 10px;
   animation: rotateLogo 15s linear infinite;
+  position: relative;
+}
+
+.navbar h1 {
+  color: var(--white);
+  letter-spacing: 2.5px;
+  font-size: 2.75rem;
+  position: relative;
+  text-align: center;
+  margin: 10px 0 0;
 }
 
 .navbar img:hover {
@@ -77,28 +106,6 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: var(--amex-blue);
-}
-
-.homepage-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--amex-blue);
-  z-index: 1;
-}
-
-.homepage-container h1 {
-  color: var(--white);
-  letter-spacing: 2.5px;
-  font-size: 2.75rem;
-  z-index: 100;
-  position: relative;
-  text-align: center;
-  margin: 0 0 25px;
 }
 
 .homepage-container span {
@@ -162,7 +169,11 @@ a {
   opacity: 0;
 }
 
-.logo-container .card .circle .logo[alt="papr news"], .logo-container .card .circle .logo[alt="cba-pharma"], .logo-container .card .circle .logo[alt="Osprey Minerals"],.logo-container .card .circle .logo[alt="landmark"], .logo-container .card .circle .logo[alt="lanterra"] {
+.logo-container .card .circle .logo[alt="papr news"],
+.logo-container .card .circle .logo[alt="cba-pharma"],
+.logo-container .card .circle .logo[alt="Osprey Minerals"],
+.logo-container .card .circle .logo[alt="landmark"],
+.logo-container .card .circle .logo[alt="lanterra"] {
   width: 100%;
 }
 
@@ -237,14 +248,55 @@ a {
 
 .footer {
   width: 100%;
-  /* min-height: 80vh; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   z-index: 100;
-  /* background: var(--black); */
   color: var(--white);
+  position: relative;
+  max-height: 650px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #303c6d, var(--amex-blue) 54%, #303c6d);
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 100%;
+}
+.one {
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 159, 244, 0.4) 0,
+    rgba(40, 159, 244, 0.32) 27%,
+    rgba(40, 159, 244, 0.09) 77%,
+    rgba(40, 159, 244, 0.02) 100%
+  );
+  opacity: 0.2;
+  opacity: 0.7;
+  width: 1400px;
+  height: 1400px;
+  right: 43.1%;
+  top: -58%;
+  left: auto;
+  bottom: auto;
+  z-index: 25;
+}
+
+.two {
+  opacity: 0.3;
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 159, 244, 0.4) 0,
+    rgba(40, 159, 244, 0.32) 27%,
+    rgba(40, 159, 244, 0.09) 77%,
+    rgba(40, 159, 244, 0.02) 100%
+  );
+  width: 824px;
+  height: 815px;
+  left: 38.5%;
+  bottom: -58.7%;
+  z-index: 35;
 }
 
 .footer .contact-layout-container {
@@ -256,6 +308,8 @@ a {
   width: 100%;
   /* min-height: 500px; */
   color: var(--white);
+  z-index: 500;
+  position: relative;
 }
 
 /* email component */
@@ -268,7 +322,6 @@ a {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  backdrop-filter: blur(5px);
   text-align: center;
   padding: 10px;
   border-radius: 15px;
@@ -298,7 +351,6 @@ a {
 }
 
 .contact-container .address .location a {
-  
   transition: background-color 0.3s ease-in-out;
   background-color: transparent;
 }
@@ -443,6 +495,7 @@ form .inputBoxBtn:hover {
   justify-content: center;
   flex-direction: row;
   padding-bottom: 15px;
+  z-index: 500;
 }
 
 .website-container p {
@@ -468,10 +521,6 @@ form .inputBoxBtn:hover {
   transform: scale(0);
 }
 
-.homepage-heading-container {
-  overflow: hidden;
-}
-
 .homepage-heading {
   transform: translateY(-100%);
   visibility: hidden;
@@ -492,9 +541,15 @@ form .inputBoxBtn:hover {
   transform: translateX(100%);
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1263px) {
   .contact-container .address {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1263px) {
+  .footer {
+    max-height: 150vh;
   }
 }
 
@@ -535,7 +590,11 @@ form .inputBoxBtn:hover {
     width: 55%;
   }
 
-  .logo-container .card .circle .logo[alt="papr news"], .logo-container .card .circle .logo[alt="cba-pharma"], .logo-container .card .circle .logo[alt="Osprey Minerals"],.logo-container .card .circle .logo[alt="landmark"], .logo-container .card .circle .logo[alt="lanterra"] {
+  .logo-container .card .circle .logo[alt="papr news"],
+  .logo-container .card .circle .logo[alt="cba-pharma"],
+  .logo-container .card .circle .logo[alt="Osprey Minerals"],
+  .logo-container .card .circle .logo[alt="landmark"],
+  .logo-container .card .circle .logo[alt="lanterra"] {
     width: 60%;
   }
 
