@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.1a059fbd.css",
-    "main.js": "/static/js/main.acd9ba68.js",
+    "main.js": "/static/js/main.a84fa51c.js",
     "static/js/787.10167d57.chunk.js": "/static/js/787.10167d57.chunk.js",
-    "static/media/symetryx-position.pdf": "/static/media/symetryx-position.64c70861724d14d73cc9.pdf",
     "static/media/noveto.webp": "/static/media/noveto.295b9986720ede67773c.webp",
     "static/media/expresa.webp": "/static/media/expresa.8aba9605b3b27890bf53.webp",
     "static/media/binah.webp": "/static/media/binah.b0593bf931a598d2c0b8.webp",
@@ -53,11 +52,11 @@
     "static/media/jassby.webp": "/static/media/jassby.e4e5e4025d16b00cb1c9.webp",
     "static/media/leaf.webp": "/static/media/leaf.e72acd06def864dbf0be.webp",
     "main.1a059fbd.css.map": "/static/css/main.1a059fbd.css.map",
-    "main.acd9ba68.js.map": "/static/js/main.acd9ba68.js.map",
+    "main.a84fa51c.js.map": "/static/js/main.a84fa51c.js.map",
     "787.10167d57.chunk.js.map": "/static/js/787.10167d57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a059fbd.css",
-    "static/js/main.acd9ba68.js"
+    "static/js/main.a84fa51c.js"
   ]
 }
